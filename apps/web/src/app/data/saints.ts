@@ -517,20 +517,38 @@ export const macariusTimeline: TimelineEntry[] = [
     label: "Early life",
     title: "Widowhood And Hidden Desire",
     body: [
-      "The OCA life remembers Macarius as born in Egypt around the beginning of the fourth century. His parents arranged a marriage for him, but his wife died while still young.",
-      "That loss becomes one of the first turning points in his story. Macarius gave himself more deeply to prayer and withdrew from ordinary ambitions, learning the Psalms and Scripture from a village elder.",
-      "After his parents died, he gave away what remained to him and moved toward the ascetic life he had long desired. Even here, the tradition does not present him as self-invented; he is formed through obedience, counsel, and grief.",
+      "The OCA life remembers Macarius as born in Egypt around the beginning of the fourth century. Some traditions name his village as Ptinapor, while other Coptic-influenced summaries associate him with Shabsheer in the Menuf region.",
+      "His parents arranged a marriage for him, but his wife died while still young. In the tradition, this grief becomes one of the first openings through which Macarius turns more completely toward prayer.",
+      "Macarius cared for his aged parents and learned Scripture, fasting, watchfulness, and manual labor from an elder. Basket weaving enters the story early, not as background color, but as part of the desert pattern of prayer joined to work.",
+      "After his parents died, he gave away what remained to him and moved toward the ascetic life he had long desired. Even here, the tradition does not present him as self-invented; he is formed through obedience, counsel, grief, and patient labor.",
     ],
+    image: {
+      alt: "Icon-inspired image of young Saint Macarius praying near a village memorial lamp and basket reeds",
+      caption:
+        "Young Macarius turns toward prayer and ascetic life after grief, counsel, and the first lessons of hidden labor.",
+      height: 1536,
+      src: "/images/macarius-widowhood-hidden-desire.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life"],
   },
   {
     label: "Village",
     title: "Ordained Against His Will",
     body: [
-      "The people of the village saw his seriousness and wanted him ordained. According to the OCA life, the local bishop made him clergy, but Macarius fled the attention and settled in another place.",
-      "There he lived by making baskets, a small detail that matters because it places him within the ordinary manual labor of the desert fathers. Prayer and work belong together in the remembered monastic pattern.",
-      "The story already shows one of Macarius' repeated instincts: he runs from honor before he runs toward honor. Public usefulness is not denied, but it is never allowed to become the center of his identity.",
+      "The people of the village saw his seriousness and wanted him set apart for church service. The OCA life says the local bishop ordained him to the diaconate, while other summaries speak more broadly of ordination.",
+      "Macarius was distressed because public honor disturbed the silence he sought. He withdrew and settled elsewhere, preferring the quiet of a small cell to the praise of the village.",
+      "There he continued the ordinary desert work of making baskets. Prayer, silence, and manual labor are not separate compartments in his story; they become one way of standing before God.",
+      "This episode establishes one of Macarius' repeated instincts: he flees honor before honor can possess him. Public usefulness is not denied, but it is never allowed to become the center of his identity.",
     ],
+    image: {
+      alt: "Icon-inspired image of a bishop blessing reluctant young Saint Macarius near a village church",
+      caption:
+        "Macarius receives church service reluctantly, already longing for the silence of the desert cell.",
+      height: 1536,
+      src: "/images/macarius-ordained-against-his-will.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life"],
   },
   {
@@ -539,58 +557,133 @@ export const macariusTimeline: TimelineEntry[] = [
     body: [
       "One of the most important stories in his life is the false accusation made against him by a young woman who became pregnant and named Macarius as the father.",
       "Macarius did not defend himself with outrage. The OCA account says he accepted the shame and worked harder to provide for the woman, even though the accusation was false.",
-      "When the truth was revealed, the village wanted to honor him. Macarius fled into the desert instead. His entrance into deeper solitude is therefore linked not only to ascetic longing, but to the refusal to be built up by praise after surviving dishonor.",
+      "The story remembers the villagers shaming him and Macarius answering by increasing his labor. He sends the earnings from his baskets for the woman and child he is accused of fathering.",
+      "When the truth was revealed, the village wanted to honor him. Macarius fled by night into the desert instead.",
+      "His entrance into deeper solitude is therefore linked not only to ascetic longing, but to the refusal to be built up by praise after surviving dishonor.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Macarius carrying baskets while villagers accuse him",
+      caption:
+        "Under false accusation, Macarius keeps silence and works, turning shame into hidden labor.",
+      height: 1536,
+      src: "/images/macarius-false-accusation.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life"],
   },
   {
     label: "Anthony",
     title: "Tested By Saint Anthony",
     body: [
-      "Macarius later visited Saint Anthony the Great, whose place in Egyptian monasticism gave him the authority of a father among fathers.",
+      "After time in the desert, Macarius later visited Saint Anthony the Great, whose place in Egyptian monasticism gave him the authority of a father among fathers.",
       "The OCA life remembers Anthony testing him with the work of soaking and plaiting palm branches. When Macarius endured the labor without complaint, Anthony recognized the grace at work in him.",
+      "Anthony's test is not a puzzle or a spectacle. It is a desert way of seeing whether patience, obedience, and perseverance have entered the body as well as the mind.",
       "This encounter places Macarius inside the living chain of desert formation: elders test younger monks, not to humiliate them for sport, but to reveal whether obedience and perseverance have become real.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Anthony testing and blessing Saint Macarius with palm branches nearby",
+      caption:
+        "Saint Anthony tests Macarius through humble work and recognizes the grace of perseverance in him.",
+      height: 1536,
+      src: "/images/macarius-tested-by-anthony.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life"],
   },
   {
     label: "Scetis",
     title: "The Young Elder",
     body: [
-      "Macarius became associated with Scetis and was eventually called a young elder. The phrase catches the paradox of his life: he was not yet old, but the desert recognized spiritual maturity in him.",
-      "The OCA account remembers that he was ordained priest for the monks and that many came to him for counsel, confession, and healing.",
-      "His cell becomes a place of fatherhood. People come not because he has built a public platform, but because the hidden life has made him trustworthy.",
+      "Macarius became associated with Scetis, the desert region that became one of the great centers of Egyptian monasticism. The sources remember him as a father in the same desert world that later shapes Moses the Black.",
+      "He was eventually called a young elder. The phrase catches the paradox of his life: he was not yet old, but the desert recognized spiritual maturity in him.",
+      "The OCA account remembers that he was ordained priest for the monks and that many came to him for counsel, confession, healing, and prayer.",
+      "Stories also remember the hidden intensity of his life, including a place of deeper withdrawal connected with his cell. His fatherhood grows from this hiddenness: people come because the desert has made him trustworthy.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Macarius receiving monks at Scetis near his cell and prayer cave",
+      caption:
+        "At Scetis, Macarius becomes the young elder: a priest and father formed by hidden prayer.",
+      height: 1536,
+      src: "/images/macarius-young-elder.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life", "macarius-orthodoxwiki"],
   },
   {
-    label: "Discernment",
-    title: "The Thief And The Skull",
+    label: "Mercy",
+    title: "Helping The Thief",
     body: [
-      "Several remembered stories show Macarius' unusual mercy and discernment. In one, he finds a thief loading his belongings onto a donkey and helps the thief finish the work rather than exposing him.",
-      "Another story tells of Macarius finding a skull in the desert and learning, through prayer, of the suffering of those separated from God. The story is severe, but its point is intercession rather than curiosity.",
-      "These episodes show why Macarius is not remembered merely as strict. His severity is joined to compassion, self-emptying, and a deep awareness of the unseen life.",
+      "One of the clearest stories of Macarius' mercy says that he returned to his cell and found a thief loading his belongings onto an animal.",
+      "Rather than exposing the thief, Macarius helped him finish loading the goods. The story is startling because Macarius treats even the loss of possessions as a place to practice freedom.",
+      "This is not indifference to evil. It is the desert logic of non-possession: the monk owns nothing so tightly that mercy must be abandoned to defend it.",
+      "The story also keeps Macarius from becoming merely severe. His asceticism is sharp, but it is joined to compassion and self-emptying.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Macarius helping a thief load stolen goods onto a donkey",
+      caption:
+        "Macarius helps load his own stolen goods, a remembered sign of radical non-possession and mercy.",
+      height: 1536,
+      src: "/images/macarius-helping-thief.png",
+      width: 1024,
+    },
+    references: ["macarius-oca-life", "sayings"],
+  },
+  {
+    label: "Intercession",
+    title: "The Skull In The Desert",
+    body: [
+      "Another severe story tells of Macarius finding a skull in the desert. Through prayer, he learns of the suffering of those separated from God.",
+      "The point of the story is not fascination with the dead. Macarius listens, prays, and weeps; the scene becomes an image of intercession.",
+      "Even here, the desert tradition holds mercy and judgment together. The elder is not entertained by spiritual realities; he is moved to compassion by them.",
+      "For that reason, the skull story belongs in Macarius' life as a witness to prayer for all, including those who seem farthest away.",
+    ],
+    image: {
+      alt: "Icon-inspired image of Saint Macarius praying beside a skull in the desert",
+      caption:
+        "Macarius prays beside the skull in the desert, a severe story remembered as intercession rather than spectacle.",
+      height: 1536,
+      src: "/images/macarius-skull-in-desert.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life", "sayings"],
   },
   {
     label: "Persecution",
     title: "Exile Under Arian Pressure",
     body: [
-      "Late in life, Macarius suffered exile during the Arian conflicts that troubled the Church in Egypt.",
-      "The OCA life remembers him being sent away with Macarius of Alexandria to an island where pagan inhabitants lived. Even in exile, the story says, God worked through him and people turned toward the faith.",
+      "Late in life, Macarius suffered exile during the Arian conflicts that troubled the Church in Egypt. The OCA life connects this suffering with the reign of Emperor Valens and the pressure of the Arian bishop Lucius.",
+      "Macarius was sent away with Macarius of Alexandria to an island where pagan inhabitants lived.",
+      "Even in exile, the story says, God worked through him. The healing of a pagan priest's daughter leads the islanders toward baptism and the Christian faith.",
       "This episode broadens the picture of Macarius beyond the solitary cell. The desert elder is also caught up in the doctrinal struggles of the fourth-century Church.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Macarius the Great and Macarius of Alexandria in a boat approaching exile",
+      caption:
+        "The two Macarii are sent into exile, where the tradition remembers healing and baptism on the island.",
+      height: 1536,
+      src: "/images/macarius-exile-arian-pressure.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life"],
   },
   {
     label: "Repose",
     title: "A Father Remembered",
     body: [
-      "Macarius is traditionally said to have reposed around the end of the fourth century, after decades in the desert.",
+      "Macarius is traditionally said to have reposed around the end of the fourth century, after decades in the desert. The OCA life remembers him as reaching ninety years of age, with sixty years spent in the wilderness.",
+      "Near his death, the tradition says that Saints Anthony and Pachomius appeared to him, and that Macarius instructed the brothers to preserve the monastic rule and traditions he had received.",
+      "His final prayer is remembered in the words of Christ: into Thy hands I commend my spirit. The story closes as it began, with surrender rather than self-display.",
       "The Church commemorates him on January 19 and remembers him as Father of Fathers, a title that names the mature spiritual fatherhood formed through hidden life.",
       "In the broader story of this site, Macarius helps show the world Moses entered: a world of elders, cells, prayer, confession, and stern mercy.",
     ],
+    image: {
+      alt: "Icon-inspired image of elderly Saint Macarius blessing disciples near the end of his life",
+      caption:
+        "At the end of his life, Macarius blesses the brothers and hands on the monastic tradition he received.",
+      height: 1536,
+      src: "/images/macarius-father-remembered.png",
+      width: 1024,
+    },
     references: ["macarius-oca-life", "macarius-oca-hymns"],
   },
 ];
