@@ -26,7 +26,7 @@ export type Saint = {
 };
 
 export type ResearchSection = {
-  body: string[];
+  body: ProseBlock[];
   bullets?: string[];
   eyebrow?: string;
   image?: {
@@ -41,7 +41,7 @@ export type ResearchSection = {
 };
 
 export type TimelineEntry = {
-  body: string[];
+  body: ProseBlock[];
   image?: {
     alt: string;
     caption?: string;
@@ -53,6 +53,16 @@ export type TimelineEntry = {
   references: string[];
   title: string;
 };
+
+export type ProseBlock =
+  | string
+  | Array<
+      | string
+      | {
+          href: string;
+          text: string;
+        }
+    >;
 
 export const references: Record<string, Reference> = {
   "oca-life": {
@@ -104,6 +114,34 @@ export const references: Record<string, Reference> = {
     url: "https://mosestheblack.org/resources/life/",
     note: "A modern Orthodox life of Saint Moses with expanded narrative details, including the shepherd by the Nile, the two sheep, and later monastic stories.",
   },
+  "macarius-oca-life": {
+    id: "macarius-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2024/01/19/100226-venerable-macarius-the-great-of-egypt",
+    note: "Eastern Orthodox life of Venerable Macarius the Great of Egypt, including his early trials, entrance into monastic life, miracles, and death.",
+  },
+  "macarius-oca-hymns": {
+    id: "macarius-oca-hymns",
+    title: "OCA Hymns",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/troparia/2024/01/19/100226-venerable-macarius-the-great-of-egypt",
+    note: "Troparion and kontakion for Saint Macarius, including the liturgical title Father of Fathers.",
+  },
+  "macarius-orthodoxwiki": {
+    id: "macarius-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Macarius_the_Great",
+    note: "Secondary overview of Saint Macarius the Great, his monastic setting, feast day, and remembered sayings.",
+  },
+  "palladius-lausiac": {
+    id: "palladius-lausiac",
+    title: "Lausiac History",
+    publisher: "Palladius of Galatia, English translation hosted by Tertullian.org",
+    url: "https://www.tertullian.org/fathers/palladius_lausiac_02_text.htm",
+    note: "Early monastic source preserving stories of Egyptian desert elders, including accounts associated with Macarius of Egypt and the Scetis tradition.",
+  },
 };
 
 export function getReferences(ids: string[]) {
@@ -154,9 +192,53 @@ export const saints: Saint[] = [
       },
     ],
   },
+  {
+    name: "Macarius the Great",
+    slug: "macarius-the-great",
+    titles: [
+      "Macarius of Egypt",
+      "Macarius the Elder",
+      "Lamp of the Desert",
+      "Father of Fathers",
+    ],
+    feastDay: "January 19",
+    period: "4th century; traditional dates c. 300-c. 391",
+    location: "Scetis, Egypt",
+    summary:
+      "A foundational desert father of Egypt whose life is remembered for humility, discernment, prayer, wonderworking, and spiritual fatherhood in Scetis.",
+    image: "/images/macarius-the-great.png",
+    facts: [
+      { label: "Commemoration", value: "January 19" },
+      { label: "Tradition", value: "Desert Father of Scetis" },
+      { label: "Place", value: "Egyptian desert" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/macarius-the-great",
+        description: "A researched introduction to Saint Macarius the Great.",
+      },
+      {
+        title: "Life",
+        href: "/saints/macarius-the-great/life",
+        description: "His trials, monastic formation, and spiritual fatherhood.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/macarius-the-great/teachings",
+        description: "Themes and sayings associated with Abba Macarius.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/macarius-the-great/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
 ];
 
 export const mosesTheBlack = saints[0];
+export const macariusTheGreat = saints[1];
 
 export const mosesOverviewSections: ResearchSection[] = [
   {
@@ -219,7 +301,14 @@ export const mosesTimeline: TimelineEntry[] = [
     label: "Conversion",
     title: "Turning Toward The Desert",
     body: [
-      "After repentance, Moses sought admission to a desert monastery. The Coptic Synaxarium emphasizes Wadi El-Natroun and says he was brought by Isidore to Macarius the Great, who taught and baptized him.",
+      [
+        "After repentance, Moses sought admission to a desert monastery. The Coptic Synaxarium emphasizes Wadi El-Natroun and says he was brought by Isidore to ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius the Great",
+        },
+        ", who taught and baptized him.",
+      ],
       "The movement into the desert was not an escape into privacy. In the monastic world of Scetis, Moses came under obedience, learned prayer, and accepted the discipline of elders who knew the life he was seeking.",
       "His conversion is remembered as both decisive and costly. He turns toward God, but the sources also show that old passions do not disappear simply because he has entered the monastery.",
     ],
@@ -339,6 +428,16 @@ export const mosesTeachingSections: ResearchSection[] = [
     references: ["antioch", "sayings"],
   },
   {
+    eyebrow: "Hiddenness",
+    title: "Fleeing The Praise Of The Powerful",
+    body: [
+      "Another story remembers a powerful visitor, sometimes described as an imperial official or prince, coming into the desert to see Moses with gifts and attendants. Moses did not welcome the attention as a useful opportunity for reputation.",
+      "When he learned that the visitor was coming, he fled. On the road, the party unknowingly met Moses himself and asked where to find his cell. Moses answered by warning them away from the monk they sought, describing him as foolish and unworthy.",
+      "Only afterward did the brothers recognize from the visitor's description that the stranger on the road had been Moses. The visitor returned home spiritually helped, not because Moses had displayed greatness, but because he had hidden from it.",
+    ],
+    references: ["fellowship"],
+  },
+  {
     eyebrow: "Prayer",
     title: "The Cell As Teacher",
     body: [
@@ -347,7 +446,7 @@ export const mosesTeachingSections: ResearchSection[] = [
       "The cell strips away performance. It leaves the monk with his thoughts, his temptations, his prayers, and the presence of God.",
       "Moses' own life gives weight to this counsel because he knew the impulse to run from inner conflict. The desert does not erase conflict, but it becomes the place where conflict can be offered to God.",
     ],
-    references: ["sayings", "oca-life"],
+    references: ["sayings"],
   },
   {
     eyebrow: "Hospitality",
@@ -374,5 +473,202 @@ export const mosesSourceGroups = [
   {
     title: "Context And Modern Reception",
     references: ["orthodoxwiki", "fellowship"],
+  },
+];
+
+export const macariusOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Desert father",
+    title: "A Father Of Scetis",
+    body: [
+      "Macarius the Great is one of the central fathers of Egyptian monasticism. The OCA life remembers him as an Egyptian ascetic who became a spiritual elder in Scetis, the desert region whose name later becomes inseparable from the great sayings tradition.",
+      "His life is not remembered as a smooth rise to religious honor. The stories around him begin with loss, unwanted attention, false accusation, and flight into deeper solitude.",
+      "The title Father of Fathers fits him because his fatherhood is not administrative first. It grows from a life tested in humiliation, prayer, discernment, and hidden labor.",
+      "Macarius stands close to the world of Moses the Black: both belong to Scetis, both are remembered through terse desert wisdom, and both teach that holiness is formed through repentance rather than reputation.",
+    ],
+    references: ["macarius-oca-life", "macarius-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Macarius Of Egypt",
+    body: [
+      "The sources call him Macarius the Great, Macarius of Egypt, and Macarius the Elder. These names distinguish him from Macarius of Alexandria, another important desert father from the same wider Egyptian monastic world.",
+      "The OCA hymnography calls him Father of Fathers, a liturgical title that gathers his place among the elders of the desert into a single phrase.",
+      "OrthodoxWiki also preserves the title Lamp of the Desert, which points to how later memory sees him: not as a public organizer first, but as a light formed in hidden ascetic life.",
+      "His name means blessed. In his life, that blessedness is not easy fortune; it is the strange blessing of being made humble, watchful, and merciful through the desert.",
+    ],
+    references: ["macarius-oca-hymns", "macarius-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Sources",
+    title: "Story, Saying, And Memory",
+    body: [
+      "The main shape of Macarius' life comes through church hagiography, liturgical commemoration, and the sayings tradition. Each source emphasizes a different part of his memory.",
+      "The OCA life gives a fuller narrative: his early marriage and widowhood, his unwanted ordination, the accusation against him, his withdrawal into the desert, his relationship with Saint Anthony, and the miracles and trials attached to his old age.",
+      "The Sayings of the Desert Fathers preserve a different kind of truth: short remembered encounters that show how Macarius answered temptation, criticism, demonic harassment, and the needs of brothers.",
+      "Read together, the sources give a portrait of a man who became great by refusing to be impressive.",
+    ],
+    references: ["macarius-oca-life", "sayings", "palladius-lausiac"],
+  },
+];
+
+export const macariusTimeline: TimelineEntry[] = [
+  {
+    label: "Early life",
+    title: "Widowhood And Hidden Desire",
+    body: [
+      "The OCA life remembers Macarius as born in Egypt around the beginning of the fourth century. His parents arranged a marriage for him, but his wife died while still young.",
+      "That loss becomes one of the first turning points in his story. Macarius gave himself more deeply to prayer and withdrew from ordinary ambitions, learning the Psalms and Scripture from a village elder.",
+      "After his parents died, he gave away what remained to him and moved toward the ascetic life he had long desired. Even here, the tradition does not present him as self-invented; he is formed through obedience, counsel, and grief.",
+    ],
+    references: ["macarius-oca-life"],
+  },
+  {
+    label: "Village",
+    title: "Ordained Against His Will",
+    body: [
+      "The people of the village saw his seriousness and wanted him ordained. According to the OCA life, the local bishop made him clergy, but Macarius fled the attention and settled in another place.",
+      "There he lived by making baskets, a small detail that matters because it places him within the ordinary manual labor of the desert fathers. Prayer and work belong together in the remembered monastic pattern.",
+      "The story already shows one of Macarius' repeated instincts: he runs from honor before he runs toward honor. Public usefulness is not denied, but it is never allowed to become the center of his identity.",
+    ],
+    references: ["macarius-oca-life"],
+  },
+  {
+    label: "Trial",
+    title: "False Accusation And Humility",
+    body: [
+      "One of the most important stories in his life is the false accusation made against him by a young woman who became pregnant and named Macarius as the father.",
+      "Macarius did not defend himself with outrage. The OCA account says he accepted the shame and worked harder to provide for the woman, even though the accusation was false.",
+      "When the truth was revealed, the village wanted to honor him. Macarius fled into the desert instead. His entrance into deeper solitude is therefore linked not only to ascetic longing, but to the refusal to be built up by praise after surviving dishonor.",
+    ],
+    references: ["macarius-oca-life"],
+  },
+  {
+    label: "Anthony",
+    title: "Tested By Saint Anthony",
+    body: [
+      "Macarius later visited Saint Anthony the Great, whose place in Egyptian monasticism gave him the authority of a father among fathers.",
+      "The OCA life remembers Anthony testing him with the work of soaking and plaiting palm branches. When Macarius endured the labor without complaint, Anthony recognized the grace at work in him.",
+      "This encounter places Macarius inside the living chain of desert formation: elders test younger monks, not to humiliate them for sport, but to reveal whether obedience and perseverance have become real.",
+    ],
+    references: ["macarius-oca-life"],
+  },
+  {
+    label: "Scetis",
+    title: "The Young Elder",
+    body: [
+      "Macarius became associated with Scetis and was eventually called a young elder. The phrase catches the paradox of his life: he was not yet old, but the desert recognized spiritual maturity in him.",
+      "The OCA account remembers that he was ordained priest for the monks and that many came to him for counsel, confession, and healing.",
+      "His cell becomes a place of fatherhood. People come not because he has built a public platform, but because the hidden life has made him trustworthy.",
+    ],
+    references: ["macarius-oca-life", "macarius-orthodoxwiki"],
+  },
+  {
+    label: "Discernment",
+    title: "The Thief And The Skull",
+    body: [
+      "Several remembered stories show Macarius' unusual mercy and discernment. In one, he finds a thief loading his belongings onto a donkey and helps the thief finish the work rather than exposing him.",
+      "Another story tells of Macarius finding a skull in the desert and learning, through prayer, of the suffering of those separated from God. The story is severe, but its point is intercession rather than curiosity.",
+      "These episodes show why Macarius is not remembered merely as strict. His severity is joined to compassion, self-emptying, and a deep awareness of the unseen life.",
+    ],
+    references: ["macarius-oca-life", "sayings"],
+  },
+  {
+    label: "Persecution",
+    title: "Exile Under Arian Pressure",
+    body: [
+      "Late in life, Macarius suffered exile during the Arian conflicts that troubled the Church in Egypt.",
+      "The OCA life remembers him being sent away with Macarius of Alexandria to an island where pagan inhabitants lived. Even in exile, the story says, God worked through him and people turned toward the faith.",
+      "This episode broadens the picture of Macarius beyond the solitary cell. The desert elder is also caught up in the doctrinal struggles of the fourth-century Church.",
+    ],
+    references: ["macarius-oca-life"],
+  },
+  {
+    label: "Repose",
+    title: "A Father Remembered",
+    body: [
+      "Macarius is traditionally said to have reposed around the end of the fourth century, after decades in the desert.",
+      "The Church commemorates him on January 19 and remembers him as Father of Fathers, a title that names the mature spiritual fatherhood formed through hidden life.",
+      "In the broader story of this site, Macarius helps show the world Moses entered: a world of elders, cells, prayer, confession, and stern mercy.",
+    ],
+    references: ["macarius-oca-life", "macarius-oca-hymns"],
+  },
+];
+
+export const macariusTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Humility",
+    title: "Accused And Silent",
+    body: [
+      "The false accusation story is central to Macarius' remembered humility. He does not simply suffer quietly because he is passive; he accepts concrete responsibility for the person who has wronged him.",
+      "His silence exposes something different from cowardice. Macarius refuses to make his innocence the most important public fact about him.",
+      "When he is later vindicated, he leaves rather than receiving praise. The shape of the story is important: he is hidden under blame, and then he hides again from honor.",
+    ],
+    references: ["macarius-oca-life", "sayings"],
+  },
+  {
+    eyebrow: "Prayer",
+    title: "Short Prayer From The Heart",
+    body: [
+      "One saying associated with Abba Macarius teaches a brother that prayer does not require many words. The monk is told to stretch out his hands and ask the Lord for mercy and help.",
+      "This counsel is simple, but not shallow. Macarius turns prayer away from performance and toward dependence.",
+      "The same pattern appears throughout the desert tradition: the prayer that saves is not impressive speech, but the heart turned toward God with need, attention, and trust.",
+    ],
+    references: ["sayings", "macarius-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Cell",
+    title: "Stay In The Cell",
+    body: [
+      "Macarius is also remembered in the sayings tradition for counsel that keeps the monk inside the place of repentance rather than chasing novelty.",
+      "The cell is not treated as a private spiritual brand. It is the place where the monk is stripped of distraction and learns what is really happening in the heart.",
+      "This gives Macarius a natural kinship with Moses the Black, whose own saying about the cell teaches the same desert truth: the place of obedience becomes the place of revelation.",
+    ],
+    references: ["sayings", "oca-life"],
+  },
+  {
+    eyebrow: "Mercy",
+    title: "Helping The Thief",
+    body: [
+      "The thief story is one of the clearest examples of Macarius' strange desert mercy. He sees his goods being stolen and chooses not to shame the thief.",
+      "Instead, he helps load the animal, treating his possessions as already surrendered to God. The story is not a rule for property; it is an icon of freedom from possessiveness.",
+      "Macarius' mercy is not sentimental. It is severe because it asks whether even being wronged can become a place of prayer.",
+    ],
+    references: ["macarius-oca-life", "sayings"],
+  },
+  {
+    eyebrow: "Discernment",
+    title: "The Two Married Women",
+    body: [
+      "One story says that Macarius wanted to learn who had attained a high spiritual measure. He was directed not to famous ascetics, but to two married women living faithfully in an ordinary household.",
+      "The lesson matters for a page about a great monk: holiness is not trapped inside the desert. The desert elder is able to recognize hidden holiness in a household because he is not protecting his own status.",
+      "Macarius' discernment therefore widens rather than narrows the reader's imagination. The cell teaches, but God is not absent from the village.",
+    ],
+    references: ["macarius-oca-life", "palladius-lausiac"],
+  },
+  {
+    eyebrow: "Spiritual fatherhood",
+    title: "Wisdom Without Display",
+    body: [
+      "Macarius is remembered as a discerning elder, but the tradition does not make discernment into cleverness. It is wisdom purified by repentance.",
+      "The elder sees clearly because he has learned not to center himself. His authority is quiet, patient, and often indirect.",
+      "Beside Moses the Black, Macarius shows another face of desert fatherhood: not the dramatic conversion from violence, but the long purification of humility, attention, and mercy.",
+    ],
+    references: ["sayings", "macarius-oca-life"],
+  },
+];
+
+export const macariusSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["macarius-oca-life", "macarius-oca-hymns"],
+  },
+  {
+    title: "Sayings And Early Desert Tradition",
+    references: ["sayings", "palladius-lausiac"],
+  },
+  {
+    title: "Context",
+    references: ["macarius-orthodoxwiki"],
   },
 ];

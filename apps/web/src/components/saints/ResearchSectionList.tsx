@@ -1,9 +1,11 @@
 import {
+  type ProseBlock,
   getReferences,
   type ResearchSection as ResearchSectionData,
 } from "@/app/data/saints";
 import { Figure } from "@/components/ui/Figure";
 import { Prose } from "@/components/ui/Prose";
+import { ProseBlockContent } from "@/components/ui/ProseBlockContent";
 import { Section } from "@/components/ui/Section";
 
 type ResearchSectionListProps = {
@@ -23,7 +25,9 @@ export function ResearchSectionList({ sections }: ResearchSectionListProps) {
           <Prose>
             {section.image ? <Figure {...section.image} /> : null}
             {section.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={getProseBlockKey(paragraph)}>
+                <ProseBlockContent block={paragraph} />
+              </p>
             ))}
             {section.bullets ? (
               <ul>
@@ -37,4 +41,12 @@ export function ResearchSectionList({ sections }: ResearchSectionListProps) {
       ))}
     </>
   );
+}
+
+function getProseBlockKey(block: ProseBlock) {
+  return typeof block === "string"
+    ? block
+    : block
+        .map((part) => (typeof part === "string" ? part : part.text))
+        .join("");
 }

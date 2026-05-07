@@ -1,9 +1,11 @@
 import {
+  type ProseBlock,
   getReferences,
   type TimelineEntry,
 } from "@/app/data/saints";
 import { Figure } from "@/components/ui/Figure";
 import { SourceLinks } from "@/components/ui/SourceLinks";
+import { ProseBlockContent } from "@/components/ui/ProseBlockContent";
 import styles from "./saints.module.css";
 
 type TimelineProps = {
@@ -20,7 +22,9 @@ export function Timeline({ entries }: TimelineProps) {
             <h3>{entry.title}</h3>
             {entry.image ? <Figure {...entry.image} /> : null}
             {entry.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+              <p key={getProseBlockKey(paragraph)}>
+                <ProseBlockContent block={paragraph} />
+              </p>
             ))}
             <SourceLinks sources={getReferences(entry.references)} />
           </div>
@@ -28,4 +32,12 @@ export function Timeline({ entries }: TimelineProps) {
       ))}
     </div>
   );
+}
+
+function getProseBlockKey(block: ProseBlock) {
+  return typeof block === "string"
+    ? block
+    : block
+        .map((part) => (typeof part === "string" ? part : part.text))
+        .join("");
 }

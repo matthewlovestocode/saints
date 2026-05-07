@@ -28,7 +28,7 @@ export function SaintHero({ saint, title }: SaintHeroProps) {
       <Image
         className={styles.portrait}
         src={saint.image}
-        alt="Icon-inspired portrait of Saint Moses the Black"
+        alt={`Icon-inspired portrait of ${saint.name}`}
         width={512}
         height={768}
         priority

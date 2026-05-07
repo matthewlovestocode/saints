@@ -73,6 +73,20 @@
   padding-left: 22px;
 }
 
+.proseLink {
+  color: var(--color-ink);
+  font-weight: 750;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.proseLink:hover {
+  color: var(--color-gold);
+  text-decoration-color: var(--color-red);
+}
+
 .figure {
   display: grid;
   gap: 10px;
