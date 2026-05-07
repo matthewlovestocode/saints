@@ -29,12 +29,26 @@ export type ResearchSection = {
   body: string[];
   bullets?: string[];
   eyebrow?: string;
+  image?: {
+    alt: string;
+    caption?: string;
+    height: number;
+    src: string;
+    width: number;
+  };
   references: string[];
   title: string;
 };
 
 export type TimelineEntry = {
   body: string[];
+  image?: {
+    alt: string;
+    caption?: string;
+    height: number;
+    src: string;
+    width: number;
+  };
   label: string;
   references: string[];
   title: string;
@@ -85,10 +99,10 @@ export const references: Record<string, Reference> = {
   },
   fellowship: {
     id: "fellowship",
-    title: "Fellowship",
+    title: "Fellowship Life",
     publisher: "Fellowship of St. Moses the Black",
-    url: "https://mosestheblack.org/",
-    note: "Modern Orthodox organization connecting ancient African Christianity, the African American experience, and racial reconciliation.",
+    url: "https://mosestheblack.org/resources/life/",
+    note: "A modern Orthodox life of Saint Moses with expanded narrative details, including the shepherd by the Nile, the two sheep, and later monastic stories.",
   },
 };
 
@@ -186,10 +200,20 @@ export const mosesTimeline: TimelineEntry[] = [
     title: "A Feared Former Life",
     body: [
       "The tradition remembers Moses as enslaved in youth, dismissed by his master, and later feared as a violent robber. The story begins with an intentionally stark picture of sin, strength, and notoriety.",
+      "One remembered story tells of a shepherd who had offended him. Moses recognized the man from across the Nile and crossed the water to find him. The shepherd, terrified by Moses' approach, abandoned his flock and hid by burying himself in the sand.",
+      "When Moses could not find the man, he took two of the sheep instead. The story is severe, but it shows why people fled at the sight of him and why his later repentance was remembered with such force.",
       "This beginning matters because the sources do not soften the darkness around him. Moses is not introduced as a misunderstood hero, but as a man who had become dangerous to others and deeply wounded in his own soul.",
       "His physical strength, which had once been joined to violence, later becomes part of the story of his endurance in ascetic life. The same intensity that made him feared is slowly redirected toward repentance.",
     ],
-    references: ["oca-life", "antioch", "st-takla"],
+    image: {
+      alt: "Icon-inspired image of younger Moses the Black taking two sheep while a frightened shepherd hides in the sand",
+      caption:
+        "A remembered scene from Moses' former life: the shepherd hides in the sand while Moses takes two sheep from the flock.",
+      height: 1536,
+      src: "/images/moses-the-robber-sheep.png",
+      width: 1024,
+    },
+    references: ["oca-life", "antioch", "st-takla", "fellowship"],
   },
   {
     label: "Conversion",
@@ -199,6 +223,14 @@ export const mosesTimeline: TimelineEntry[] = [
       "The movement into the desert was not an escape into privacy. In the monastic world of Scetis, Moses came under obedience, learned prayer, and accepted the discipline of elders who knew the life he was seeking.",
       "His conversion is remembered as both decisive and costly. He turns toward God, but the sources also show that old passions do not disappear simply because he has entered the monastery.",
     ],
+    image: {
+      alt: "Icon-inspired image of younger Moses the Black walking toward a desert monastery where an elder monk receives him",
+      caption:
+        "Moses turns toward the desert monastery, where the elders begin to receive him into repentance and obedience.",
+      height: 1536,
+      src: "/images/moses-turning-toward-desert.png",
+      width: 1024,
+    },
     references: ["oca-life", "st-takla"],
   },
   {
@@ -209,6 +241,14 @@ export const mosesTimeline: TimelineEntry[] = [
       "This part of his life is especially important because it refuses a simple before-and-after story. Moses repents, but then he must learn how to live as a penitent man day after day.",
       "His hidden service to the brethren shows repentance taking practical form. Carrying water at night is a small, bodily act, but in the tradition it becomes a sign that humility had begun to reshape his strength.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Moses the Black carrying water at night during his long ascetic struggle",
+      caption:
+        "Moses carries water at night for the brothers, a hidden act of service within the long work of repentance.",
+      height: 1536,
+      src: "/images/moses-long-struggle.png",
+      width: 1024,
+    },
     references: ["oca-life", "st-takla"],
   },
   {
@@ -219,6 +259,14 @@ export const mosesTimeline: TimelineEntry[] = [
       "The image is simple and severe: his sins are falling behind him, and he does not fully see them, yet he has been asked to examine another person. Moses answers the situation with a living parable instead of an argument.",
       "This story is one reason he is remembered not only as a penitent, but as a teacher of mercy. His authority comes from self-knowledge, not from eagerness to correct others.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Moses the Black carrying a basket of sand that spills behind him",
+      caption:
+        "Moses carries a leaking basket of sand as an image of the sins he cannot fully see behind him.",
+      height: 1536,
+      src: "/images/moses-basket-of-sand.png",
+      width: 1024,
+    },
     references: ["antioch", "sayings"],
   },
   {
@@ -229,6 +277,14 @@ export const mosesTimeline: TimelineEntry[] = [
       "The remembered numbers vary, but the meaning is consistent: Moses became a father to others. His past did not prevent him from becoming a guide; rather, his repentance became part of the wisdom by which he guided.",
       "His priesthood also deepens the contrast at the heart of his life. The hands once associated with violence become hands of blessing, service, and prayer within the desert community.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Moses the Black teaching and blessing younger monks as a spiritual father",
+      caption:
+        "Moses is remembered as a priest and spiritual father, guiding brothers in the desert through repentance, blessing, and prayer.",
+      height: 1536,
+      src: "/images/moses-spiritual-father.png",
+      width: 1024,
+    },
     references: ["oca-life", "st-takla"],
   },
   {
@@ -239,6 +295,14 @@ export const mosesTimeline: TimelineEntry[] = [
       "The tradition presents this death as a final act of repentance and peace. Moses does not meet violence with violence, even though violence had once defined his life.",
       "His martyrdom completes the arc remembered by the Church: the robber becomes monk, the monk becomes father, and the father remains in peace when death comes to the monastery.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Moses the Black blessing monks at Scetis before his martyrdom",
+      caption:
+        "Moses remains at Scetis in peace, blessing the brothers and refusing to meet the coming violence with violence.",
+      height: 1536,
+      src: "/images/moses-remaining-at-scetis.png",
+      width: 1024,
+    },
     references: ["oca-life", "antioch", "st-takla"],
   },
 ];
@@ -264,6 +328,14 @@ export const mosesTeachingSections: ResearchSection[] = [
       "Moses does not excuse sin. Instead, he places judgment under the fear of God and the knowledge of his own need for mercy.",
       "His humility is therefore strong, not evasive. It teaches that clear sight begins with repentance in the heart of the one who sees.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Moses the Black carrying a basket of sand that spills behind him",
+      caption:
+        "Saint Moses carrying the basket of sand, a remembered image of his refusal to condemn a brother while his own sins fell behind him unseen.",
+      height: 1536,
+      src: "/images/moses-basket-of-sand.png",
+      width: 1024,
+    },
     references: ["antioch", "sayings"],
   },
   {

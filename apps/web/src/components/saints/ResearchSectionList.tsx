@@ -2,6 +2,7 @@ import {
   getReferences,
   type ResearchSection as ResearchSectionData,
 } from "@/app/data/saints";
+import { Figure } from "@/components/ui/Figure";
 import { Prose } from "@/components/ui/Prose";
 import { Section } from "@/components/ui/Section";
 
@@ -20,6 +21,7 @@ export function ResearchSectionList({ sections }: ResearchSectionListProps) {
           title={section.title}
         >
           <Prose>
+            {section.image ? <Figure {...section.image} /> : null}
             {section.body.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
