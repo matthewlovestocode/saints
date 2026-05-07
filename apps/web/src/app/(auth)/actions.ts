@@ -63,3 +63,11 @@ export async function signUp(formData: FormData) {
     `/sign-in?message=${encodeURIComponent("Check your email to confirm your account.")}`,
   );
 }
+
+export async function signOut() {
+  const supabase = await createClient();
+
+  await supabase.auth.signOut();
+  revalidatePath("/", "layout");
+  redirect("/sign-in");
+}
