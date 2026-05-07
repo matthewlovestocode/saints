@@ -556,7 +556,14 @@ export const macariusOverviewSections: ResearchSection[] = [
       "Macarius the Great is one of the central fathers of Egyptian monasticism. The OCA life remembers him as an Egyptian ascetic who became a spiritual elder in Scetis, the desert region whose name later becomes inseparable from the great sayings tradition.",
       "His life is not remembered as a smooth rise to religious honor. The stories around him begin with loss, unwanted attention, false accusation, and flight into deeper solitude.",
       "The title Father of Fathers fits him because his fatherhood is not administrative first. It grows from a life tested in humiliation, prayer, discernment, and hidden labor.",
-      "Macarius stands close to the world of Moses the Black: both belong to Scetis, both are remembered through terse desert wisdom, and both teach that holiness is formed through repentance rather than reputation.",
+      [
+        "Macarius stands close to the world of ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses the Black",
+        },
+        ": both belong to Scetis, both are remembered through terse desert wisdom, and both teach that holiness is formed through repentance rather than reputation.",
+      ],
     ],
     references: ["macarius-oca-life", "macarius-orthodoxwiki"],
   },
@@ -576,7 +583,14 @@ export const macariusOverviewSections: ResearchSection[] = [
     title: "Story, Saying, And Memory",
     body: [
       "The main shape of Macarius' life comes through church hagiography, liturgical commemoration, and the sayings tradition. Each source emphasizes a different part of his memory.",
-      "The OCA life gives a fuller narrative: his early marriage and widowhood, his unwanted ordination, the accusation against him, his withdrawal into the desert, his relationship with Saint Anthony, and the miracles and trials attached to his old age.",
+      [
+        "The OCA life gives a fuller narrative: his early marriage and widowhood, his unwanted ordination, the accusation against him, his withdrawal into the desert, his relationship with ",
+        {
+          href: "/saints/anthony-the-great",
+          text: "Saint Anthony",
+        },
+        ", and the miracles and trials attached to his old age.",
+      ],
       "The Sayings of the Desert Fathers preserve a different kind of truth: short remembered encounters that show how Macarius answered temptation, criticism, demonic harassment, and the needs of brothers.",
       "Read together, the sources give a portrait of a man who became great by refusing to be impressive.",
     ],
@@ -647,7 +661,14 @@ export const macariusTimeline: TimelineEntry[] = [
     label: "Anthony",
     title: "Tested By Saint Anthony",
     body: [
-      "After time in the desert, Macarius later visited Saint Anthony the Great, whose place in Egyptian monasticism gave him the authority of a father among fathers.",
+      [
+        "After time in the desert, Macarius later visited ",
+        {
+          href: "/saints/anthony-the-great",
+          text: "Saint Anthony the Great",
+        },
+        ", whose place in Egyptian monasticism gave him the authority of a father among fathers.",
+      ],
       "The OCA life remembers Anthony testing him with the work of soaking and plaiting palm branches. When Macarius endured the labor without complaint, Anthony recognized the grace at work in him.",
       "Anthony's test is not a puzzle or a spectacle. It is a desert way of seeing whether patience, obedience, and perseverance have entered the body as well as the mind.",
       "This encounter places Macarius inside the living chain of desert formation: elders test younger monks, not to humiliate them for sport, but to reveal whether obedience and perseverance have become real.",
@@ -666,7 +687,14 @@ export const macariusTimeline: TimelineEntry[] = [
     label: "Scetis",
     title: "The Young Elder",
     body: [
-      "Macarius became associated with Scetis, the desert region that became one of the great centers of Egyptian monasticism. The sources remember him as a father in the same desert world that later shapes Moses the Black.",
+      [
+        "Macarius became associated with Scetis, the desert region that became one of the great centers of Egyptian monasticism. The sources remember him as a father in the same desert world that later shapes ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses the Black",
+        },
+        ".",
+      ],
       "He was eventually called a young elder. The phrase catches the paradox of his life: he was not yet old, but the desert recognized spiritual maturity in him.",
       "The OCA account remembers that he was ordained priest for the monks and that many came to him for counsel, confession, healing, and prayer.",
       "Stories also remember the hidden intensity of his life, including a place of deeper withdrawal connected with his cell. His fatherhood grows from this hiddenness: people come because the desert has made him trustworthy.",
@@ -743,10 +771,24 @@ export const macariusTimeline: TimelineEntry[] = [
     title: "A Father Remembered",
     body: [
       "Macarius is traditionally said to have reposed around the end of the fourth century, after decades in the desert. The OCA life remembers him as reaching ninety years of age, with sixty years spent in the wilderness.",
-      "Near his death, the tradition says that Saints Anthony and Pachomius appeared to him, and that Macarius instructed the brothers to preserve the monastic rule and traditions he had received.",
+      [
+        "Near his death, the tradition says that ",
+        {
+          href: "/saints/anthony-the-great",
+          text: "Saint Anthony",
+        },
+        " and Saint Pachomius appeared to him, and that Macarius instructed the brothers to preserve the monastic rule and traditions he had received.",
+      ],
       "His final prayer is remembered in the words of Christ: into Thy hands I commend my spirit. The story closes as it began, with surrender rather than self-display.",
       "The Church commemorates him on January 19 and remembers him as Father of Fathers, a title that names the mature spiritual fatherhood formed through hidden life.",
-      "In the broader story of this site, Macarius helps show the world Moses entered: a world of elders, cells, prayer, confession, and stern mercy.",
+      [
+        "In the broader story of this site, Macarius helps show the world ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        " entered: a world of elders, cells, prayer, confession, and stern mercy.",
+      ],
     ],
     image: {
       alt: "Icon-inspired image of elderly Saint Macarius blessing disciples near the end of his life",
@@ -787,7 +829,14 @@ export const macariusTeachingSections: ResearchSection[] = [
     body: [
       "Macarius is also remembered in the sayings tradition for counsel that keeps the monk inside the place of repentance rather than chasing novelty.",
       "The cell is not treated as a private spiritual brand. It is the place where the monk is stripped of distraction and learns what is really happening in the heart.",
-      "This gives Macarius a natural kinship with Moses the Black, whose own saying about the cell teaches the same desert truth: the place of obedience becomes the place of revelation.",
+      [
+        "This gives Macarius a natural kinship with ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses the Black",
+        },
+        ", whose own saying about the cell teaches the same desert truth: the place of obedience becomes the place of revelation.",
+      ],
     ],
     references: ["sayings", "oca-life"],
   },
@@ -817,7 +866,14 @@ export const macariusTeachingSections: ResearchSection[] = [
     body: [
       "Macarius is remembered as a discerning elder, but the tradition does not make discernment into cleverness. It is wisdom purified by repentance.",
       "The elder sees clearly because he has learned not to center himself. His authority is quiet, patient, and often indirect.",
-      "Beside Moses the Black, Macarius shows another face of desert fatherhood: not the dramatic conversion from violence, but the long purification of humility, attention, and mercy.",
+      [
+        "Beside ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses the Black",
+        },
+        ", Macarius shows another face of desert fatherhood: not the dramatic conversion from violence, but the long purification of humility, attention, and mercy.",
+      ],
     ],
     references: ["sayings", "macarius-oca-life"],
   },
@@ -865,7 +921,14 @@ export const anthonyOverviewSections: ResearchSection[] = [
       "The sources call him Anthony the Great, Antony the Great, Anthony of Egypt, Anthony of the Desert, Anthony the Anchorite, and Venerable and God-bearing Father Anthony. These names gather both his Egyptian setting and his later honor in the Church.",
       "The title Father of Monasticism points to influence rather than possession. Anthony did not turn the desert into his personal territory. His withdrawal became a form of life that drew disciples, readers, and imitators because it was transparently ordered toward God.",
       "The OCA life places his birth in the village of Coma near the desert of the Thebaid in 251. OrthodoxWiki gives the broader traditional memory of an upper Egyptian saint whose life belongs to the third and fourth centuries.",
-      "His feast is kept on January 17, close to the commemoration of Macarius the Great on January 19. In the calendar, as in the stories, Anthony stands near the other Egyptian desert fathers whose lives unfold under his shadow and blessing.",
+      [
+        "His feast is kept on January 17, close to the commemoration of ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius the Great",
+        },
+        " on January 19. In the calendar, as in the stories, Anthony stands near the other Egyptian desert fathers whose lives unfold under his shadow and blessing.",
+      ],
     ],
     references: ["anthony-oca-life", "anthony-oca-hymns", "anthony-orthodoxwiki"],
   },
@@ -875,7 +938,19 @@ export const anthonyOverviewSections: ResearchSection[] = [
     body: [
       "Anthony's hymnography remembers him not as a man who escaped the Church, but as one whose prayer upheld it. The troparion compares his zeal to Elias and his straight path to John the Baptist.",
       "The same hymn says that Anthony made the desert a city. That phrase is a compact image of monastic fruitfulness: the apparently empty place becomes inhabited by prayer, discipline, counsel, and communion.",
-      "The kontakion calls him the foundation of the Fathers. The title does not flatten the distinctness of later elders like Pachomius, Macarius, or Moses. It names Anthony as a first great visible pillar in the received memory of desert monastic life.",
+      [
+        "The kontakion calls him the foundation of the Fathers. The title does not flatten the distinctness of later elders like Pachomius, ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        ", or ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        ". It names Anthony as a first great visible pillar in the received memory of desert monastic life.",
+      ],
     ],
     references: ["anthony-oca-hymns"],
   },
@@ -886,7 +961,19 @@ export const anthonyOverviewSections: ResearchSection[] = [
       "Anthony's life is known especially through the Life of Anthony attributed to Saint Athanasius of Alexandria. That text shaped how later Christians imagined the desert, spiritual struggle, and the authority of a holy elder.",
       "The OCA life follows the same broad movement: hearing the Gospel, caring for his sister, beginning ascetic practice near home, entering stricter solitude, enduring demonic assault, guiding disciples, visiting Alexandria, and giving final instructions before his repose.",
       "Athanasius' Life is also important because it is a theological portrait, not merely a diary. It presents Anthony as proof that Christ's victory is real in the body and in the mind of a person who prays, fasts, works, and resists despair.",
-      "Read beside Macarius and Moses, Anthony helps set the larger frame: the desert is not only a place of solitude, but a place where spiritual fatherhood is tested, recognized, and handed on.",
+      [
+        "Read beside ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        " and ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        ", Anthony helps set the larger frame: the desert is not only a place of solitude, but a place where spiritual fatherhood is tested, recognized, and handed on.",
+      ],
     ],
     references: ["athanasius-life-anthony", "anthony-oca-life", "anthony-oca-hymns"],
   },
@@ -894,8 +981,31 @@ export const anthonyOverviewSections: ResearchSection[] = [
     eyebrow: "Place in this site",
     title: "The Elder Behind The Elders",
     body: [
-      "Anthony belongs naturally beside Macarius and Moses because he helps explain the world they enter. The desert already has a grammar by the time their stories mature: obedience, handwork, fasting, night prayer, silence, hospitality, discernment, and counsel from elders.",
-      "Macarius meets Anthony as a younger monk being tested. Moses enters a monastic world shaped by elders whose authority is not worldly rank but holiness learned through repentance.",
+      [
+        "Anthony belongs naturally beside ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        " and ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        " because he helps explain the world they enter. The desert already has a grammar by the time their stories mature: obedience, handwork, fasting, night prayer, silence, hospitality, discernment, and counsel from elders.",
+      ],
+      [
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        " meets Anthony as a younger monk being tested. ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        " enters a monastic world shaped by elders whose authority is not worldly rank but holiness learned through repentance.",
+      ],
       "Anthony's page therefore serves as a doorway into the earlier generation of Egyptian monastic memory. He is not the whole desert tradition, but he is one of its first great faces.",
     ],
     references: ["anthony-oca-life", "macarius-oca-life", "sayings"],
@@ -1224,7 +1334,14 @@ export const anthonyTeachingSections: ResearchSection[] = [
     title: "Testing What Appears Holy",
     body: [
       "Anthony is remembered as an elder of discernment. He warns monks that impressive experiences, visions, and inner movements must be tested rather than accepted simply because they feel powerful.",
-      "That discernment becomes visible in his encounter with Macarius, where humble labor reveals more than outward claims could have shown.",
+      [
+        "That discernment becomes visible in his encounter with ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        ", where humble labor reveals more than outward claims could have shown.",
+      ],
       "For Anthony, spiritual authority is not performance. It is patience, obedience, humility, and the quiet fruit of a life turned toward God.",
       "This gives his counsel a continuing relevance beyond monastic settings. Not every intense inner experience is illumination, and not every hidden obedience is small.",
     ],
@@ -1287,7 +1404,19 @@ export const anthonyTeachingSections: ResearchSection[] = [
     body: [
       "The story of the expelled brother shows Anthony's discernment as mercy. A brother has fallen or been accused, and the community's attempts to correct him only drive him deeper into distress.",
       "Anthony recognizes the word that can save a soul rather than crush it. The result is not permissiveness, but restoration.",
-      "This mercy places Anthony close to the later desert fathers on this site. Macarius helps a thief load stolen goods; Moses refuses to judge while his own sins fall behind him. Anthony, too, knows that fatherhood must heal and not merely expose.",
+      [
+        "This mercy places Anthony close to the later desert fathers on this site. ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        " helps a thief load stolen goods; ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        " refuses to judge while his own sins fall behind him. Anthony, too, knows that fatherhood must heal and not merely expose.",
+      ],
     ],
     references: ["sayings", "macarius-oca-life", "antioch"],
   },
@@ -1327,7 +1456,19 @@ export const anthonyTeachingSections: ResearchSection[] = [
     body: [
       "Anthony becomes a father because he first becomes a disciple. He learns Scripture, seeks counsel, works with his hands, fasts, prays, and returns to the struggle after defeat and injury.",
       "When disciples gather, he does not offer novelty. He gives them the tested pattern of a life already lived before God: perseverance, humility, vigilance, courage, and hope.",
-      "This is why he belongs near Macarius and Moses. Anthony helps establish the desert as a school where repentance is not merely felt, but practiced until it becomes wisdom for others.",
+      [
+        "This is why he belongs near ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius",
+        },
+        " and ",
+        {
+          href: "/saints/moses-the-black",
+          text: "Moses",
+        },
+        ". Anthony helps establish the desert as a school where repentance is not merely felt, but practiced until it becomes wisdom for others.",
+      ],
     ],
     references: ["anthony-oca-life", "sayings", "macarius-oca-life"],
   },

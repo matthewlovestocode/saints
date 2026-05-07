@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { anthonySourceGroups, anthonyTheGreat } from "../../../data/saints";
 import { ReferenceGroup } from "@/components/saints/ReferenceGroup";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
@@ -38,9 +39,10 @@ export default function AnthonyTheGreatSourcesPage() {
             desert.
           </p>
           <p>
-            Read beside Macarius, these sources show Anthony as both solitary
-            ascetic and elder: hidden in prayer, yet deeply formative for the
-            monks who came after him.
+            Read beside{" "}
+            <Link href="/saints/macarius-the-great">Macarius</Link>, these
+            sources show Anthony as both solitary ascetic and elder: hidden in
+            prayer, yet deeply formative for the monks who came after him.
           </p>
         </Prose>
       </Section>
