@@ -98,7 +98,7 @@ export const references: Record<string, Reference> = {
     title: "Desert Fathers",
     publisher: "The Sayings of the Desert Fathers, translated by Benedicta Ward",
     url: "https://stmichaeltravis.org/wp-content/uploads/2023/02/Sayings-of-the-Desert-Fathers-Alphabetical.pdf",
-    note: "An accessible PDF of the Alphabetical Collection, including sayings attributed to Abba Moses and broader desert-monastic context.",
+    note: "An accessible PDF of the Alphabetical Collection, including sayings attributed to Abba Anthony, Abba Moses, and broader desert-monastic context.",
   },
   orthodoxwiki: {
     id: "orthodoxwiki",
@@ -141,6 +141,34 @@ export const references: Record<string, Reference> = {
     publisher: "Palladius of Galatia, English translation hosted by Tertullian.org",
     url: "https://www.tertullian.org/fathers/palladius_lausiac_02_text.htm",
     note: "Early monastic source preserving stories of Egyptian desert elders, including accounts associated with Macarius of Egypt and the Scetis tradition.",
+  },
+  "anthony-oca-life": {
+    id: "anthony-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/0201/01/17/100216-venerable-and-god-bearing-father-anthony-the-great",
+    note: "Eastern Orthodox life of Venerable and God-bearing Father Anthony the Great, including his renunciation, desert warfare, disciples, and final instructions.",
+  },
+  "anthony-oca-hymns": {
+    id: "anthony-oca-hymns",
+    title: "OCA Hymns",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/troparia/2454/01/17",
+    note: "Troparion and kontakion for Saint Anthony the Great, commemorated on January 17.",
+  },
+  "anthony-orthodoxwiki": {
+    id: "anthony-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Anthony_the_Great",
+    note: "Secondary overview of Saint Anthony the Great, his dates, place in Egyptian monasticism, and later reception.",
+  },
+  "athanasius-life-anthony": {
+    id: "athanasius-life-anthony",
+    title: "Life Of Anthony",
+    publisher: "Athanasius of Alexandria, English translation hosted by Elpenor",
+    url: "https://www.elpenor.org/athanasius/anthony-life.asp",
+    note: "Classic early life of Anthony by Saint Athanasius of Alexandria, one of the formative texts for Christian monastic memory.",
   },
 };
 
@@ -235,10 +263,54 @@ export const saints: Saint[] = [
       },
     ],
   },
+  {
+    name: "Anthony the Great",
+    slug: "anthony-the-great",
+    titles: [
+      "Anthony of Egypt",
+      "Antony the Great",
+      "Father of Monasticism",
+      "God-bearing Father",
+    ],
+    feastDay: "January 17",
+    period: "3rd-4th century; traditional dates c. 251-356",
+    location: "Egypt; Thebaid and inner desert",
+    summary:
+      "A foundational desert father whose life of renunciation, prayer, spiritual warfare, counsel, and hidden authority became a model for Christian monasticism.",
+    image: "/images/anthony-the-great.png",
+    facts: [
+      { label: "Commemoration", value: "January 17" },
+      { label: "Tradition", value: "Father of monasticism" },
+      { label: "Place", value: "Egyptian desert" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/anthony-the-great",
+        description: "A researched introduction to Saint Anthony the Great.",
+      },
+      {
+        title: "Life",
+        href: "/saints/anthony-the-great/life",
+        description: "His renunciation, desert struggle, and fatherhood.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/anthony-the-great/teachings",
+        description: "Themes and counsel associated with Abba Anthony.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/anthony-the-great/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
 ];
 
 export const mosesTheBlack = saints[0];
 export const macariusTheGreat = saints[1];
+export const anthonyTheGreat = saints[2];
 
 export const mosesOverviewSections: ResearchSection[] = [
   {
@@ -763,5 +835,529 @@ export const macariusSourceGroups = [
   {
     title: "Context",
     references: ["macarius-orthodoxwiki"],
+  },
+];
+
+export const anthonyOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Desert father",
+    title: "A Father Of Monasticism",
+    body: [
+      "Anthony the Great is remembered as one of the decisive fathers of Egyptian monasticism. The OCA life calls him the Father of monasticism and presents his life as a pattern of renunciation, ascetic struggle, discernment, and spiritual fatherhood.",
+      "His importance is not that he invented every form of ascetic life. Christians had fasted, prayed, practiced virginity, and given away possessions before him. Anthony's importance is that his life made the desert visible as a school of prayer for the wider Church.",
+      "The remembered arc is strikingly clear: a young Egyptian hears the Gospel as a direct summons, gives away his inheritance, learns from local ascetics, enters solitude, endures temptation, becomes a guide to monks, and then speaks for the Orthodox faith when the Church is under pressure.",
+      "Anthony is therefore not simply a solitary hero. He is an anchorite whose hidden life becomes fruitful for others. The more he withdraws from reputation, the more his life becomes a point of orientation for monks, bishops, emperors, philosophers, and ordinary Christians.",
+      [
+        "In the story of ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius the Great",
+        },
+        ", Anthony appears as the elder who tests and recognizes another desert father. That encounter helps show Anthony's place in the living chain of monastic formation: the desert life is received, tested, and handed on.",
+      ],
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony", "anthony-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Anthony Of Egypt",
+    body: [
+      "The sources call him Anthony the Great, Antony the Great, Anthony of Egypt, Anthony of the Desert, Anthony the Anchorite, and Venerable and God-bearing Father Anthony. These names gather both his Egyptian setting and his later honor in the Church.",
+      "The title Father of Monasticism points to influence rather than possession. Anthony did not turn the desert into his personal territory. His withdrawal became a form of life that drew disciples, readers, and imitators because it was transparently ordered toward God.",
+      "The OCA life places his birth in the village of Coma near the desert of the Thebaid in 251. OrthodoxWiki gives the broader traditional memory of an upper Egyptian saint whose life belongs to the third and fourth centuries.",
+      "His feast is kept on January 17, close to the commemoration of Macarius the Great on January 19. In the calendar, as in the stories, Anthony stands near the other Egyptian desert fathers whose lives unfold under his shadow and blessing.",
+    ],
+    references: ["anthony-oca-life", "anthony-oca-hymns", "anthony-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Liturgical memory",
+    title: "The Desert Made A City",
+    body: [
+      "Anthony's hymnography remembers him not as a man who escaped the Church, but as one whose prayer upheld it. The troparion compares his zeal to Elias and his straight path to John the Baptist.",
+      "The same hymn says that Anthony made the desert a city. That phrase is a compact image of monastic fruitfulness: the apparently empty place becomes inhabited by prayer, discipline, counsel, and communion.",
+      "The kontakion calls him the foundation of the Fathers. The title does not flatten the distinctness of later elders like Pachomius, Macarius, or Moses. It names Anthony as a first great visible pillar in the received memory of desert monastic life.",
+    ],
+    references: ["anthony-oca-hymns"],
+  },
+  {
+    eyebrow: "Sources",
+    title: "A Life That Taught The Church",
+    body: [
+      "Anthony's life is known especially through the Life of Anthony attributed to Saint Athanasius of Alexandria. That text shaped how later Christians imagined the desert, spiritual struggle, and the authority of a holy elder.",
+      "The OCA life follows the same broad movement: hearing the Gospel, caring for his sister, beginning ascetic practice near home, entering stricter solitude, enduring demonic assault, guiding disciples, visiting Alexandria, and giving final instructions before his repose.",
+      "Athanasius' Life is also important because it is a theological portrait, not merely a diary. It presents Anthony as proof that Christ's victory is real in the body and in the mind of a person who prays, fasts, works, and resists despair.",
+      "Read beside Macarius and Moses, Anthony helps set the larger frame: the desert is not only a place of solitude, but a place where spiritual fatherhood is tested, recognized, and handed on.",
+    ],
+    references: ["athanasius-life-anthony", "anthony-oca-life", "anthony-oca-hymns"],
+  },
+  {
+    eyebrow: "Place in this site",
+    title: "The Elder Behind The Elders",
+    body: [
+      "Anthony belongs naturally beside Macarius and Moses because he helps explain the world they enter. The desert already has a grammar by the time their stories mature: obedience, handwork, fasting, night prayer, silence, hospitality, discernment, and counsel from elders.",
+      "Macarius meets Anthony as a younger monk being tested. Moses enters a monastic world shaped by elders whose authority is not worldly rank but holiness learned through repentance.",
+      "Anthony's page therefore serves as a doorway into the earlier generation of Egyptian monastic memory. He is not the whole desert tradition, but he is one of its first great faces.",
+    ],
+    references: ["anthony-oca-life", "macarius-oca-life", "sayings"],
+  },
+  {
+    eyebrow: "Sayings",
+    title: "The Short Wisdom Of Abba Anthony",
+    body: [
+      "The Sayings of the Desert Fathers preserve Anthony in another register. The Life gives a broad narrative; the sayings give flashes of practical judgment.",
+      "In these sayings, Anthony is not only severe. He teaches perseverance, but also measure. He warns against temptation, but also against trusting in one's own righteousness. He honors solitude, but knows that brothers can break if they are stretched beyond their strength.",
+      "This is important for reading him well. Anthony's desert is demanding, but not mechanical. The elder knows that salvation is not produced by intensity alone; it is formed through humility, discernment, Scripture, prayer, mercy, and love.",
+    ],
+    references: ["sayings", "anthony-oca-life"],
+  },
+];
+
+export const anthonyTimeline: TimelineEntry[] = [
+  {
+    label: "Early life",
+    title: "A Serious Child In Egypt",
+    body: [
+      "The OCA life remembers Anthony as born in Egypt in 251, in the village of Coma near the Thebaid. His parents are described as pious Christians of honorable standing, and Anthony is remembered as a serious child who listened attentively in church.",
+      "This first portrait is quiet but important. Anthony's later radicalism does not begin with contempt for ordinary Christian life. It begins with a child who loves the services, remembers Scripture, and receives the faith from his household.",
+      "The tradition also stresses obedience to his parents. Before Anthony becomes an elder of the desert, he is shown as someone capable of receiving formation. That capacity to listen remains one of the hidden foundations of his later authority.",
+    ],
+    references: ["anthony-oca-life"],
+  },
+  {
+    label: "Renunciation",
+    title: "Hearing The Gospel",
+    body: [
+      "When Anthony was about twenty, his parents died and he became responsible for his younger sister. The story does not let renunciation erase family duty; his first discernment includes the practical care of another person.",
+      "About six months later, he entered church while thinking about the believers in Acts who sold possessions and gave to those in need. Then he heard Christ's words to the rich young man: sell, give to the poor, and follow.",
+      "Anthony received that Gospel as addressed to him. He distributed his inheritance, entrusted his sister to the care of Christian virgins, and began the ascetic life near his village.",
+      "This beginning matters because Anthony's withdrawal is not presented as private restlessness. It is obedience to Christ, practiced through poverty, responsibility, prayer, and watchfulness.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of young Saint Anthony hearing the Gospel and turning toward renunciation",
+      caption:
+        "Anthony hears the Gospel as a direct summons, gives away his inheritance, and begins the ascetic path.",
+      height: 1536,
+      src: "/images/anthony-hearing-gospel-renunciation.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Formation",
+    title: "Handwork, Alms, And Elders",
+    body: [
+      "Anthony's first ascetic life was close to home. He lived in a hut near the village, worked with his hands, supported himself, and gave alms to the poor.",
+      "He also visited other ascetics in the region and sought benefit from each of them. The picture is not of a self-invented solitary who needs no one, but of a young man gathering wisdom from those already practiced in the life.",
+      "This part of the story grounds Anthony's later authority. His solitude grows out of obedience, manual labor, Scripture, poverty, and counsel. The desert father first becomes a disciple.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Temptation",
+    title: "The First Battles",
+    body: [
+      "The OCA life remembers Anthony's early temptations as concrete and inward: memories of former comfort, anxiety over his sister, doubts about the path he had chosen, and bodily desire.",
+      "Anthony answers these not with bravado, but with prayer, meditation on Christ, fasting, and the remembrance of judgment. The struggle is psychological, bodily, and spiritual at once.",
+      "The story also includes a vision of an angel alternating prayer and work. Anthony receives this as instruction: the ascetic life is not vague intensity, but a rhythm in which prayer and labor hold one another steady.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony praying beside palm fibers and a basket during his first ascetic battles",
+      caption:
+        "Anthony learns the rhythm of prayer and handwork while early temptations test his resolve.",
+      height: 1536,
+      src: "/images/anthony-first-battles-prayer-work.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Tombs",
+    title: "Alone Among The Graves",
+    body: [
+      "Seeking greater solitude, Anthony moved farther from the village and shut himself in a tomb, asking a friend to bring bread at appointed times.",
+      "The tradition remembers this place as a severe arena of spiritual warfare. Demonic assault leaves him wounded, and his friend carries him back as if dead. When Anthony revives, he asks to be taken back to the same place.",
+      "The point is not morbid fascination with tombs. Anthony's return shows perseverance. He does not treat suffering as proof that God has abandoned him, nor does he allow fear to define the boundary of obedience.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony praying among Egyptian tombs during spiritual struggle",
+      caption:
+        "Among the tombs, Anthony returns to prayer and learns perseverance in the place of fear.",
+      height: 1536,
+      src: "/images/anthony-among-tombs-struggle.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Consolation",
+    title: "Christ Present In The Struggle",
+    body: [
+      "One of the central scenes in Anthony's life comes after a renewed attack in the tomb. The tradition says light appeared, the demons vanished, and Anthony cried out to Christ, asking why help had not appeared from the beginning.",
+      "The answer he receives is that Christ had been present and had seen his struggle. Anthony is healed and strengthened, not because struggle was unreal, but because it had been endured with trust.",
+      "This moment gives a key to the whole Anthony tradition. The desert does not mean the absence of anguish. It means learning to discover Christ's presence without making immediate relief the measure of faithfulness.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Fort",
+    title: "Twenty Years Behind Stones",
+    body: [
+      "At about thirty-five, Anthony sought the deeper desert. He crossed the river, found an abandoned fort, and settled there, barricading the entrance with stones while a friend brought bread only rarely.",
+      "The OCA life remembers him spending twenty years there in isolation and struggle. When the entrance was finally opened, those who came to him found not a broken or embittered man, but an elder marked by calm.",
+      "This is one of the great paradoxes of Anthony's life. Hiddenness does not make him less human. It makes him more available to others because his inner life has been purified by patience.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony praying inside an abandoned desert fort sealed with stones",
+      caption:
+        "Anthony's long hidden life in the abandoned fort becomes a place of purification and quiet strength.",
+      height: 1536,
+      src: "/images/anthony-twenty-years-behind-stones.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    label: "Fatherhood",
+    title: "The Desert Becomes A City",
+    body: [
+      "After Anthony emerged from the fort, disciples gathered around him. The OCA life says the area around his cell became surrounded by monasteries, and Anthony acted as father and guide to those seeking salvation.",
+      "His counsel strengthened monks who were already struggling and stirred others to love the ascetic life. He urged them not to grow faint-hearted, not to fear demonic assaults, and not to rely on themselves.",
+      "This is the moment hymnography later compresses into the image of the desert made a city. The empty place becomes a community of prayer because one man's hidden obedience becomes fruitful for many.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony blessing monks as the desert becomes a city of cells",
+      caption:
+        "Anthony emerges as a father of monks, and the desert becomes inhabited by prayer, work, and counsel.",
+      height: 1536,
+      src: "/images/anthony-desert-becomes-city.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "anthony-oca-hymns"],
+  },
+  {
+    label: "Measure",
+    title: "The Bow That Must Not Break",
+    body: [
+      "The Sayings remember a hunter seeing Anthony at ease with the brethren and becoming scandalized. Anthony asks him to keep drawing and shooting his bow until the hunter objects that the bow will break if bent too far.",
+      "Anthony applies the image to the work of God: brothers can also break if they are stretched beyond measure. Sometimes the elder must come down to meet their need.",
+      "This saying keeps Anthony from being read as a one-note ascetic. The father of monks knows severity, but he also knows proportion. Human beings are not saved by being snapped.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony teaching a hunter and monks with the bow that must not break",
+      caption:
+        "Anthony teaches measure through the bow: discipline must serve salvation rather than break the person.",
+      height: 1536,
+      src: "/images/anthony-bow-that-must-not-break.png",
+      width: 1024,
+    },
+    references: ["sayings"],
+  },
+  {
+    label: "Martyrs",
+    title: "Alexandria During Persecution",
+    body: [
+      "In 311, during persecution under Maximian, Anthony left the desert and went to Alexandria. The tradition says he wished to suffer with the martyrs and openly ministered to Christians in prison.",
+      "He accompanied confessors through trial and execution, but he was preserved from martyrdom. The story is careful: Anthony does not seek safety as an idol, but neither does he choose the hour of his own death.",
+      "His presence in Alexandria shows that desert withdrawal and love for the Church are not opposites. The solitary returns when the suffering body of Christ needs consolation.",
+    ],
+    references: ["anthony-oca-life"],
+  },
+  {
+    label: "Inner desert",
+    title: "Farther Away, Still Sought",
+    body: [
+      "After the persecution, Anthony returned to the desert. As crowds came seeking healing, exorcism, and counsel, he withdrew even farther into the inner desert and settled on a high mountain.",
+      "This withdrawal is not coldness toward the people who sought him. It is the same pattern seen throughout his life: he receives others, then returns to hidden prayer so that his service does not become performance.",
+      "The brethren continued to seek him out, and Anthony still visited communities when needed. His solitude remained porous to charity, but resistant to fame.",
+    ],
+    references: ["anthony-oca-life"],
+  },
+  {
+    label: "Church",
+    title: "Defending The Faith",
+    body: [
+      "Anthony was not remembered only as a solitary. The tradition says he came again to Alexandria to defend the Orthodox faith against Manichaean and Arian teaching.",
+      "Because his name was honored, Arians tried to claim him. Anthony publicly rejected that claim and denounced Arianism in the presence of the bishop.",
+      "This public witness is important because Anthony's desert authority serves the Church rather than standing apart from it. The elder who flees empty attention can still appear when confession of the faith is required.",
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of Saint Anthony defending the Orthodox faith in Alexandria beside a bishop",
+      caption:
+        "Anthony leaves the desert when the Church needs witness, defending the faith in Alexandria with calm authority.",
+      height: 1536,
+      src: "/images/anthony-defending-faith-alexandria.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "anthony-orthodoxwiki"],
+  },
+  {
+    label: "Scripture",
+    title: "Learning To Say I Do Not Know",
+    body: [
+      "The Sayings remember Anthony asking elders to interpret a passage of Scripture. Each offers an explanation, but Anthony says they have not understood it. When Abba Joseph answers that he does not know, Anthony says Joseph has found the way.",
+      "The point is not anti-intellectualism. Anthony is teaching that Scripture is approached with humility, not with the need to sound wise.",
+      "Another saying shows Anthony going deep into the desert to pray for understanding of a difficult passage. The elder who guides others remains a learner before God.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    label: "Mercy",
+    title: "Receiving The Brother Who Fell",
+    body: [
+      "One saying remembers a brother being cast out of his monastery and coming to Anthony. Anthony sends him back, but when the brothers reject him again, the case is answered with a parable about helpers who push a stuck man deeper into the mud.",
+      "Anthony recognizes the wisdom of that parable and the brothers are pierced to the heart. The fallen brother is received back.",
+      "This episode is one of the gentlest windows into Anthony's fatherhood. The elder does not deny sin, but he sees when correction has become crushing rather than healing.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    label: "City",
+    title: "An Equal In The City",
+    body: [
+      "The Sayings also remember Anthony learning that someone equal to him was living in the city: a physician who gave whatever he had beyond his needs to the poor and praised God daily.",
+      "This story matters because it prevents the desert from becoming spiritual pride. Anthony is a father of monks, but holiness is not imprisoned in monastic geography.",
+      "The desert trains perception. A true elder can recognize grace outside the desert without feeling diminished by it.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    label: "Counsel",
+    title: "Philosophers And Emperors",
+    body: [
+      "Anthony's fame reached beyond monastic circles. The OCA life remembers pagan philosophers coming to test or mock him because he lacked formal education, only to be silenced by the clarity of his words.",
+      "Emperor Constantine and his sons also wrote to Anthony. His reply honors faith in Christ but turns imperial attention toward judgment and the true kingship of Christ.",
+      "These scenes show the strange authority of the desert elder. Anthony does not possess civic office or polished schooling, yet his life has given him a freedom from flattery that makes his counsel weighty.",
+    ],
+    references: ["anthony-oca-life", "anthony-orthodoxwiki"],
+  },
+  {
+    label: "Macarius",
+    title: "Recognizing Another Father",
+    body: [
+      [
+        "Anthony also appears inside the life of ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius the Great",
+        },
+        ". The OCA life of Macarius remembers Anthony testing him through the work of soaking and plaiting palm branches.",
+      ],
+      "When Macarius endured the labor without complaint, Anthony recognized the grace at work in him. The test is ordinary work, but the insight is spiritual: patience reveals what claims cannot prove.",
+      "This episode helps connect the saints on this site. Anthony is not only a subject of memory; he is a father whose discernment helps name the holiness of another desert elder.",
+    ],
+    references: ["macarius-oca-life", "anthony-oca-life"],
+  },
+  {
+    label: "Repose",
+    title: "Final Instructions",
+    body: [
+      "Anthony is traditionally remembered as reposing in 356 at the age of 105, after eighty-five years in the solitary desert.",
+      "Near his death, he instructed the brethren to preserve the Orthodox faith, avoid negligence in monastic struggle, and seek union first with the Lord and then with the saints.",
+      "He told two disciples to bury him secretly in the desert, not in Alexandria. The hidden grave is a final act consistent with his whole life: even after death, Anthony refuses to become a spectacle.",
+      "The OCA life remembers him leaving monastic garments to Saint Athanasius and Saint Serapion, a final sign of his bond with the Church and with the elders who preserved his memory.",
+      [
+        "Later tradition places Anthony among the fathers who appear near the death of ",
+        {
+          href: "/saints/macarius-the-great",
+          text: "Macarius the Great",
+        },
+        ", blessing the preservation of the monastic rule and traditions received in the desert.",
+      ],
+    ],
+    image: {
+      alt: "Coptic icon-inspired image of elderly Saint Anthony giving final instructions to two disciples in the desert",
+      caption:
+        "At the end of his life, Anthony blesses his disciples and asks that his burial remain hidden in the desert.",
+      height: 1536,
+      src: "/images/anthony-final-instructions-hidden-grave.png",
+      width: 1024,
+    },
+    references: ["anthony-oca-life", "macarius-oca-life"],
+  },
+  {
+    label: "Relics",
+    title: "A Hidden Grave And Later Memory",
+    body: [
+      "The tradition of Anthony's burial emphasizes secrecy, but later memory also preserves accounts of his relics being transferred: first to Alexandria, later to Constantinople, and eventually westward.",
+      "This tension is fitting. Anthony wanted hiddenness, yet the Church could not forget him. His body was buried quietly, while his life continued to travel through hagiography, hymnography, monastic rules, icons, and sayings.",
+      "The history after his death shows how a man who fled public honor became one of the most widely remembered ascetics in Christian history.",
+    ],
+    references: ["anthony-oca-life", "anthony-orthodoxwiki"],
+  },
+];
+
+export const anthonyTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Renunciation",
+    title: "The Gospel Taken Personally",
+    body: [
+      "Anthony's remembered life begins with a direct hearing of the Gospel. He does not treat Christ's word to sell possessions and follow Him as a distant ideal for someone else.",
+      "The important detail is that Anthony also cares for his sister. Renunciation is not abandonment dressed up as holiness. It is obedience shaped by charity, responsibility, and trust.",
+      "His poverty opens into a lifelong pattern of prayer, handwork, discipline, and freedom from possessiveness. The command of Christ becomes concrete, bodily, and daily.",
+      "This gives his life its force for later monasticism. Anthony shows that the Gospel can be received with frightening seriousness, and that such seriousness can become joy rather than bitterness.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    eyebrow: "Prayer and labor",
+    title: "The Angel's Rhythm",
+    body: [
+      "The vision of the angel alternating prayer and work is one of the clearest teaching moments in Anthony's early life.",
+      "It keeps ascetic life from becoming either disembodied prayer or mere productivity. The monk prays, works, prays again, and works again; the body and soul learn one rhythm.",
+      "This rhythm also connects Anthony with the later desert world of basket weaving, rope making, water carrying, and hidden service. Manual labor is not a distraction from holiness. It becomes one way humility takes shape.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    eyebrow: "Watchfulness",
+    title: "Spiritual Warfare Without Despair",
+    body: [
+      "Anthony's stories are full of demonic trial, but the point is not fascination with darkness. The tradition uses those scenes to show endurance, discernment, and reliance on Christ.",
+      "His temptations include memories, anxieties, bodily impulses, fear, and pride. That range matters because spiritual warfare is not only dramatic external assault; it is also the ordinary struggle of thoughts.",
+      "Anthony teaches that temptation should be exposed and resisted, not magnified into the center of attention. The mature monk becomes sober without becoming frantic, and courageous without trusting in himself.",
+      "The Cross, prayer, Scripture, fasting, and humility are the weapons in these stories. Victory belongs to Christ, not to Anthony's temperament.",
+    ],
+    references: ["athanasius-life-anthony", "anthony-oca-life"],
+  },
+  {
+    eyebrow: "Discernment",
+    title: "Testing What Appears Holy",
+    body: [
+      "Anthony is remembered as an elder of discernment. He warns monks that impressive experiences, visions, and inner movements must be tested rather than accepted simply because they feel powerful.",
+      "That discernment becomes visible in his encounter with Macarius, where humble labor reveals more than outward claims could have shown.",
+      "For Anthony, spiritual authority is not performance. It is patience, obedience, humility, and the quiet fruit of a life turned toward God.",
+      "This gives his counsel a continuing relevance beyond monastic settings. Not every intense inner experience is illumination, and not every hidden obedience is small.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony", "macarius-oca-life"],
+  },
+  {
+    eyebrow: "Hiddenness",
+    title: "Authority That Flees Display",
+    body: [
+      "Anthony's withdrawal into the inner desert is not a rejection of charity. It is a refusal to let reputation become the shape of his life.",
+      "The tradition remembers people seeking him precisely because he did not organize himself around being sought. His authority grows in proportion to his freedom from applause.",
+      "His hidden burial completes the same pattern. Anthony gives even his death back to the desert, asking that his body not become an occasion for spectacle or possession.",
+      "His hiddenness gives a pattern shared by later desert fathers: the elder becomes trustworthy by being less interested in appearing great than in being faithful.",
+    ],
+    references: ["anthony-oca-life", "anthony-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Fearlessness",
+    title: "Do Not Fear The Enemy",
+    body: [
+      "Anthony's counsel repeatedly refuses fear. He does not deny temptation or demonic malice, but he insists that the monk should not be ruled by terror.",
+      "The reason is theological: Christ is stronger than the powers that trouble the soul. The Cross is not an ornament in Anthony's life; it is the sign under which the monk resists.",
+      "This fearlessness is not bravado. Anthony is wounded, tested, and exhausted in the stories. Courage means remaining with God inside the struggle, not pretending the struggle is easy.",
+    ],
+    references: ["anthony-oca-life", "athanasius-life-anthony"],
+  },
+  {
+    eyebrow: "Humility",
+    title: "Blame, Temptation, And The Last Breath",
+    body: [
+      "Several sayings associated with Anthony are almost painfully direct about humility. He teaches that a person should take blame for his own sins before God and expect temptation until his last breath.",
+      "This does not mean morbid self-hatred. It means the monk stops treating spiritual struggle as an embarrassing interruption and accepts repentance as the normal shape of the life.",
+      "Anthony also warns against trusting in one's own righteousness. The elder knows that self-confidence can dress itself in religious clothing, so he keeps the monk close to watchfulness and mercy.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    eyebrow: "Measure",
+    title: "Do Not Break The Bow",
+    body: [
+      "The hunter and the bow story gives Anthony's asceticism a humane edge. The bow that is bent without rest will break; the brother stretched beyond measure may also break.",
+      "This does not weaken Anthony's discipline. It reveals its intelligence. The goal is salvation, not maximum strain.",
+      "A mature elder therefore knows when to press and when to relieve, when to call a brother higher and when to come down to meet his need.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    eyebrow: "Scripture",
+    title: "The Wisdom Of Not Knowing",
+    body: [
+      "Anthony's sayings about Scripture are marked by humility. When others rush to explain a passage, the one who says he does not know is praised as having found the way.",
+      "Another saying shows Anthony withdrawing to pray for understanding rather than performing expertise in front of the brothers.",
+      "This is a desert approach to theology: Scripture is not mastered as an object. It is received with prayer, patience, fear of God, and the willingness to be taught.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    eyebrow: "Mercy",
+    title: "Saving The Fallen Brother",
+    body: [
+      "The story of the expelled brother shows Anthony's discernment as mercy. A brother has fallen or been accused, and the community's attempts to correct him only drive him deeper into distress.",
+      "Anthony recognizes the word that can save a soul rather than crush it. The result is not permissiveness, but restoration.",
+      "This mercy places Anthony close to the later desert fathers on this site. Macarius helps a thief load stolen goods; Moses refuses to judge while his own sins fall behind him. Anthony, too, knows that fatherhood must heal and not merely expose.",
+    ],
+    references: ["sayings", "macarius-oca-life", "antioch"],
+  },
+  {
+    eyebrow: "Hidden holiness",
+    title: "An Equal Outside The Desert",
+    body: [
+      "Anthony's revelation about the city physician is one of the most important correctives in the tradition. A monk may flee the city, but God has not fled it.",
+      "The doctor gives beyond his needs and praises God daily. His holiness is ordinary in form, but not small.",
+      "Anthony's greatness includes his freedom to receive that lesson. The father of monks can be told that his equal is a layman in the city, and the story does not make him smaller. It makes the mercy of God larger.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    eyebrow: "Love",
+    title: "From Fear Toward Love",
+    body: [
+      "One saying attributed to Anthony says that he no longer fears God, but loves Him, because love casts out fear.",
+      "Read beside his severe counsel about judgment, fasting, and vigilance, this saying is especially important. Anthony's austerity is not an end in itself. It is ordered toward love.",
+      "The beginning of the path may involve fear, sobriety, and painful struggle. The maturity of the path is communion with God in love.",
+    ],
+    references: ["sayings"],
+  },
+  {
+    eyebrow: "Church",
+    title: "Solitude In Service Of The Faith",
+    body: [
+      "Anthony's visits to Alexandria show that desert solitude does not mean indifference to the Church. He comes when Christians are persecuted, and later when false teaching threatens the confession of Christ.",
+      "His public witness has force because it comes from hidden prayer. Anthony is not chasing controversy, but he is also not neutral when the faith is being distorted.",
+      "This gives his life a fuller shape than private asceticism. The desert elder belongs to the Church, prays for the Church, suffers with the Church, and speaks when the Church needs his witness.",
+    ],
+    references: ["anthony-oca-life", "anthony-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Fatherhood",
+    title: "The Desert As A School",
+    body: [
+      "Anthony becomes a father because he first becomes a disciple. He learns Scripture, seeks counsel, works with his hands, fasts, prays, and returns to the struggle after defeat and injury.",
+      "When disciples gather, he does not offer novelty. He gives them the tested pattern of a life already lived before God: perseverance, humility, vigilance, courage, and hope.",
+      "This is why he belongs near Macarius and Moses. Anthony helps establish the desert as a school where repentance is not merely felt, but practiced until it becomes wisdom for others.",
+    ],
+    references: ["anthony-oca-life", "sayings", "macarius-oca-life"],
+  },
+  {
+    eyebrow: "Death",
+    title: "Keeping The End Hidden",
+    body: [
+      "Anthony's final instructions gather the whole meaning of his life: preserve the faith, remain diligent in the struggle, seek union with the Lord, and keep his burial hidden.",
+      "He leaves garments to Athanasius and Serapion, but he does not leave a monument to himself. The tangible memory is modest; the spiritual inheritance is immense.",
+      "His death teaches the same lesson as his life. The saint does not need to possess his legacy. He hands it over to God, to the Church, and to the disciples who must now live the tradition rather than merely admire it.",
+    ],
+    references: ["anthony-oca-life", "anthony-oca-hymns"],
+  },
+];
+
+export const anthonySourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["anthony-oca-life", "anthony-oca-hymns"],
+  },
+  {
+    title: "Classic Life",
+    references: ["athanasius-life-anthony"],
+  },
+  {
+    title: "Sayings And Desert Tradition",
+    references: ["sayings"],
+  },
+  {
+    title: "Context",
+    references: ["anthony-orthodoxwiki", "macarius-oca-life"],
   },
 ];
