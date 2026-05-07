@@ -1,0 +1,14 @@
+{
+  "name": "orthodox-saints",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @orthodox-saints/web --",
+    "build": "npm run build --workspace @orthodox-saints/web --",
+    "lint": "npm run lint --workspace @orthodox-saints/web --",
+    "start": "npm run start --workspace @orthodox-saints/web --"
+  }
+}
