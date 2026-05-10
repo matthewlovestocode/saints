@@ -212,6 +212,146 @@ export const references: Record<string, Reference> = {
     url: "https://orthodoxwiki.org/Mary_of_Egypt",
     note: "Secondary overview of Saint Mary of Egypt, her repentance, forty-seven years in the desert, meeting with Zosimas, and Lenten commemoration.",
   },
+  "george-oca-life": {
+    id: "george-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2022/04/23/101184-greatmartyr-victory-bearer-and-wonderworker-george",
+    note: "Eastern Orthodox life of Greatmartyr George, including his confession under Diocletian, martyrdom, miracles, feast day, and dragon tradition.",
+  },
+  "george-orthodoxwiki": {
+    id: "george-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/George_the_Trophy-bearer",
+    note: "Secondary overview of Saint George the Trophy-bearer, his titles, martyrdom, iconography, and wider veneration.",
+  },
+  "nino-oca-life": {
+    id: "nino-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2026/01/14/100191-saint-nino-nina-equal-of-the-apostles-enlightener-of-georgia",
+    note: "Eastern Orthodox life of Saint Nino, Equal of the Apostles and Enlightener of Georgia, including her calling, preaching, healings, and repose.",
+  },
+  "nino-oca-entrance": {
+    id: "nino-oca-entrance",
+    title: "Entrance Into Georgia",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2021/05/19/103847-entrance-of-saint-nino-nina-the-enlightener-into-georgia",
+    note: "OCA account of the Georgian feast commemorating Saint Nino's entrance into Georgia, kept on May 19.",
+  },
+  "nino-orthodoxwiki": {
+    id: "nino-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Nino_of_Cappadocia",
+    note: "Secondary overview of Nino of Cappadocia, her Georgian mission, names, feast days, and grapevine cross.",
+  },
+  "gabriel-official-life": {
+    id: "gabriel-official-life",
+    title: "Life And Works",
+    publisher: "Official Saint Gabriel of Georgia Site",
+    url: "https://monkgabriel.ge/eng/life.htm",
+    note: "Extended life of Saint Gabriel Urgebadze, including childhood faith, monastic calling, Soviet persecution, Samtavro ministry, and repose.",
+  },
+  "gabriel-official": {
+    id: "gabriel-official",
+    title: "Saint Gabriel Confessor And Fool For Christ",
+    publisher: "Official Saint Gabriel of Georgia Site",
+    url: "https://monkgabriel.ge/eng/",
+    note: "Official devotional and biographical material for Saint Gabriel, including feast, canonization, relics, and sayings.",
+  },
+  "gabriel-acrod": {
+    id: "gabriel-acrod",
+    title: "St. Gabriel Urgebadze",
+    publisher: "American Carpatho-Russian Orthodox Diocese",
+    url: "https://www.acrod.org/orthodox-christianity/articles/saints/st-gregory-urgebadze",
+    note: "Orthodox diocesan summary of Saint Gabriel's life as confessor, monk, and fool-for-Christ in Soviet Georgia.",
+  },
+  "john-oca-life": {
+    id: "john-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/0201/07/02/206392-saint-john-maximovitch-archbishop-of-shanghai-and-san-francisco",
+    note: "Eastern Orthodox life of Saint John Maximovitch, Archbishop of Shanghai and San Francisco, including his diaspora ministry, asceticism, and glorification.",
+  },
+  "john-orthodoxwiki": {
+    id: "john-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/John_%28Maximovitch%29_the_Wonderworker",
+    note: "Secondary overview of Saint John the Wonderworker, his names, pastoral works, refugee care, and continuing veneration.",
+  },
+  "john-monastery": {
+    id: "john-monastery",
+    title: "About Saint John",
+    publisher: "Monastery of Saint John of San Francisco",
+    url: "https://monasteryofstjohn.org/?p=about_st_john",
+    note: "Monastery biography of Saint John, emphasizing his prayer, pastoral care, and miracles in the Orthodox diaspora.",
+  },
+  "maria-oca-life": {
+    id: "maria-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2044/07/20/108892-righteous-martyr-maria-skobtsova",
+    note: "Eastern Orthodox life of Righteous Martyr Maria Skobtsova, including Paris hospitality, rescue work, arrest, martyrdom, and glorification.",
+  },
+  "maria-orthodoxwiki": {
+    id: "maria-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Maria_Skobtsova",
+    note: "Secondary overview of Mother Maria of Paris, her names, ministry, martyrdom at Ravensbruck, and feast-day notes.",
+  },
+  "maria-acrod": {
+    id: "maria-acrod",
+    title: "St. Maria Skobtsova Of Paris",
+    publisher: "American Carpatho-Russian Orthodox Diocese",
+    url: "https://www.acrod.org/orthodox-christianity/articles/saints/stmaria",
+    note: "Orthodox diocesan life of Saint Maria, focusing on service to the poor, refugees, Jews, prisoners, and her martyrdom.",
+  },
+  "nektarios-oca-life": {
+    id: "nektarios-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/1002/11/09/103251-saint-nectarius-kephalas-metropolitan-of-pentapolis",
+    note: "Eastern Orthodox life of Saint Nektarios Kephalas, Metropolitan of Pentapolis, including slander, patient endurance, Aegina, and healing intercession.",
+  },
+  "nektarios-orthodoxwiki": {
+    id: "nektarios-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Nectarios_of_Pentapolis",
+    note: "Secondary overview of Saint Nektarios of Pentapolis and Aegina, including naming variants, chronology, writings, and veneration.",
+  },
+  "nektarios-monastery": {
+    id: "nektarios-monastery",
+    title: "Saint Nektarios Monastery",
+    publisher: "Saint Nektarios Greek Orthodox Monastery",
+    url: "https://www.stnektariosmonastery.org/en/generalinfo.html",
+    note: "Monastery information on devotion to Saint Nektarios, including feast observances associated with his memory.",
+  },
+  "seraphim-oca-life": {
+    id: "seraphim-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2021/01/02/100008-repose-of-venerable-seraphim-wonderworker-of-sarov",
+    note: "Eastern Orthodox life of Venerable Seraphim of Sarov, including his monastic formation, hermitage, elderhood, teachings, and repose.",
+  },
+  "seraphim-oca-relics": {
+    id: "seraphim-oca-relics",
+    title: "Uncovering Of Relics",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/all-lives/0579/07/19",
+    note: "OCA account of the July 19 commemoration of the uncovering of Saint Seraphim's relics.",
+  },
+  "seraphim-orthodoxwiki": {
+    id: "seraphim-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Seraphim_of_Sarov",
+    note: "Secondary overview of Saint Seraphim of Sarov, his feast days, life, teachings, and reception.",
+  },
 };
 
 export function getReferences(ids: string[]) {
@@ -434,6 +574,307 @@ export const saints: Saint[] = [
       },
     ],
   },
+  {
+    name: "George the Dragon Slayer",
+    slug: "george-the-dragon-slayer",
+    titles: [
+      "Greatmartyr George",
+      "George the Trophy-bearer",
+      "George the Victory-bearer",
+      "Wonderworker",
+    ],
+    feastDay: "April 23",
+    period: "Late 3rd-early 4th century; martyred in 303",
+    location: "Cappadocia, Palestine, and Nicomedia",
+    summary:
+      "A soldier-martyr whose courage before Diocletian and iconographic victory over the dragon witness to Christ's triumph over fear, idolatry, and death.",
+    image: "/images/george-the-dragon-slayer.png",
+    facts: [
+      { label: "Commemoration", value: "April 23" },
+      { label: "Tradition", value: "Greatmartyr and trophy-bearer" },
+      { label: "Place", value: "Roman East" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/george-the-dragon-slayer",
+        description: "A researched introduction to Saint George.",
+      },
+      {
+        title: "Life",
+        href: "/saints/george-the-dragon-slayer/life",
+        description: "His confession, martyrdom, and dragon tradition.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/george-the-dragon-slayer/teachings",
+        description: "Themes of courage, almsgiving, endurance, and victory.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/george-the-dragon-slayer/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Nino of Georgia",
+    slug: "nino-of-georgia",
+    titles: [
+      "Nina of Georgia",
+      "Nino of Cappadocia",
+      "Equal-to-the-Apostles",
+      "Enlightener of Georgia",
+    ],
+    feastDay: "January 14; entrance into Georgia May 19",
+    period: "Late 3rd-4th century",
+    location: "Cappadocia, Jerusalem, Armenia, and Georgia",
+    summary:
+      "The Equal-to-the-Apostles missionary who carried the grapevine cross into Georgia and preached Christ through prayer, healing, humility, and patient witness.",
+    image: "/images/nino-of-georgia.png",
+    facts: [
+      { label: "Commemoration", value: "January 14" },
+      { label: "Tradition", value: "Enlightener of Georgia" },
+      { label: "Place", value: "Mtskheta and Bodbe" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/nino-of-georgia",
+        description: "A researched introduction to Saint Nino.",
+      },
+      {
+        title: "Life",
+        href: "/saints/nino-of-georgia/life",
+        description: "Her calling, entrance into Georgia, and missionary witness.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/nino-of-georgia/teachings",
+        description: "Themes of mission, humility, the Cross, and healing.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/nino-of-georgia/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Gabriel of Georgia",
+    slug: "gabriel-of-georgia",
+    titles: [
+      "Gabriel Urgebadze",
+      "Confessor",
+      "Fool-for-Christ",
+      "Elder of Samtavro",
+    ],
+    feastDay: "November 2",
+    period: "1929-1995",
+    location: "Tbilisi, Mtskheta, and Samtavro, Georgia",
+    summary:
+      "A modern Georgian monk, confessor, and fool-for-Christ whose life under Soviet atheism became a witness to repentance, love, humility, and fearless fidelity.",
+    image: "/images/gabriel-of-georgia.png",
+    facts: [
+      { label: "Commemoration", value: "November 2" },
+      { label: "Tradition", value: "Confessor and fool-for-Christ" },
+      { label: "Place", value: "Georgia" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/gabriel-of-georgia",
+        description: "A researched introduction to Saint Gabriel of Georgia.",
+      },
+      {
+        title: "Life",
+        href: "/saints/gabriel-of-georgia/life",
+        description: "His childhood faith, Soviet persecution, and Samtavro elderhood.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/gabriel-of-georgia/teachings",
+        description: "Themes of love, repentance, humility, and confession.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/gabriel-of-georgia/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "John of Shanghai and San Francisco",
+    slug: "john-of-shanghai-and-san-francisco",
+    titles: [
+      "John Maximovitch",
+      "John the Wonderworker",
+      "Archbishop John",
+      "Hierarch of the Orthodox diaspora",
+    ],
+    feastDay: "July 2",
+    period: "1896-1966",
+    location: "Ukraine, Serbia, Shanghai, Western Europe, and San Francisco",
+    summary:
+      "A modern Orthodox bishop and wonderworker remembered for ascetic prayer, daily liturgy, care for refugees and orphans, and pastoral service across the diaspora.",
+    image: "/images/john-of-shanghai-and-san-francisco.png",
+    facts: [
+      { label: "Commemoration", value: "July 2" },
+      { label: "Tradition", value: "Bishop and wonderworker" },
+      { label: "Place", value: "Shanghai and San Francisco" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/john-of-shanghai-and-san-francisco",
+        description: "A researched introduction to Saint John Maximovitch.",
+      },
+      {
+        title: "Life",
+        href: "/saints/john-of-shanghai-and-san-francisco/life",
+        description: "His monastic calling, refugee ministry, and episcopal care.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/john-of-shanghai-and-san-francisco/teachings",
+        description: "Themes of liturgy, mercy, humility, and pastoral intercession.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/john-of-shanghai-and-san-francisco/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Maria of Paris",
+    slug: "maria-of-paris",
+    titles: [
+      "Mother Maria Skobtsova",
+      "Righteous Martyr Maria",
+      "Saint Mary of Paris",
+      "Martyr of Ravensbruck",
+    ],
+    feastDay: "July 20",
+    period: "1891-1945",
+    location: "Riga, Russia, Paris, and Ravensbruck",
+    summary:
+      "A nun and righteous martyr whose Paris ministry joined prayer to radical hospitality, protection of the persecuted, and sacrificial love under Nazi occupation.",
+    image: "/images/maria-of-paris.png",
+    facts: [
+      { label: "Commemoration", value: "July 20" },
+      { label: "Tradition", value: "Righteous martyr" },
+      { label: "Place", value: "Paris" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/maria-of-paris",
+        description: "A researched introduction to Saint Maria of Paris.",
+      },
+      {
+        title: "Life",
+        href: "/saints/maria-of-paris/life",
+        description: "Her exile, hospitality, rescue work, arrest, and martyrdom.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/maria-of-paris/teachings",
+        description: "Themes of service, personhood, hospitality, and martyrdom.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/maria-of-paris/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Nektarios of Aegina",
+    slug: "nektarios-of-aegina",
+    titles: [
+      "Nektarios of Pentapolis",
+      "Nectarius Kephalas",
+      "Metropolitan of Pentapolis",
+      "Wonderworker of Aegina",
+    ],
+    feastDay: "November 9",
+    period: "1846-1920",
+    location: "Thrace, Constantinople, Alexandria, Athens, and Aegina",
+    summary:
+      "A modern Greek hierarch and wonderworker remembered for patient endurance under slander, theological formation, monastic renewal, and healing intercession.",
+    image: "/images/nektarios-of-aegina.png",
+    facts: [
+      { label: "Commemoration", value: "November 9" },
+      { label: "Tradition", value: "Hierarch and wonderworker" },
+      { label: "Place", value: "Aegina" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/nektarios-of-aegina",
+        description: "A researched introduction to Saint Nektarios.",
+      },
+      {
+        title: "Life",
+        href: "/saints/nektarios-of-aegina/life",
+        description: "His formation, unjust exile, Aegina monastery, and repose.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/nektarios-of-aegina/teachings",
+        description: "Themes of patience, humility, education, and healing prayer.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/nektarios-of-aegina/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Seraphim of Sarov",
+    slug: "seraphim-of-sarov",
+    titles: [
+      "Venerable Seraphim",
+      "Wonderworker of Sarov",
+      "Elder of Sarov",
+      "Teacher of the Holy Spirit",
+    ],
+    feastDay: "January 2; uncovering of relics July 19",
+    period: "1754-1833",
+    location: "Kursk, Sarov, and Diveyevo, Russia",
+    summary:
+      "A Russian ascetic, hermit, elder, and wonderworker whose joyful spiritual fatherhood taught that the aim of Christian life is acquiring the Holy Spirit.",
+    image: "/images/seraphim-of-sarov.png",
+    facts: [
+      { label: "Commemoration", value: "January 2" },
+      { label: "Tradition", value: "Hermit, elder, and wonderworker" },
+      { label: "Place", value: "Sarov" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/seraphim-of-sarov",
+        description: "A researched introduction to Saint Seraphim.",
+      },
+      {
+        title: "Life",
+        href: "/saints/seraphim-of-sarov/life",
+        description: "His monastic formation, hermitage, elderhood, and repose.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/seraphim-of-sarov/teachings",
+        description: "Themes of the Holy Spirit, prayer, joy, peace, and mercy.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/seraphim-of-sarov/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
 ];
 
 export const mosesTheBlack = saints[0];
@@ -441,6 +882,17 @@ export const macariusTheGreat = saints[1];
 export const anthonyTheGreat = saints[2];
 export const spyridonTheWonderworker = saints[3];
 export const maryOfEgypt = saints[4];
+export const georgeTheDragonSlayer = saints[5];
+export const ninoOfGeorgia = saints[6];
+export const gabrielOfGeorgia = saints[7];
+export const johnOfShanghaiAndSanFrancisco = saints[8];
+export const mariaOfParis = saints[9];
+export const nektariosOfAegina = saints[10];
+export const seraphimOfSarov = saints[11];
+
+export const saintContent = Object.fromEntries(
+  saints.map((saint) => [saint.slug, saint]),
+) as Record<string, Saint>;
 
 export const mosesOverviewSections: ResearchSection[] = [
   {
@@ -1960,5 +2412,1125 @@ export const marySourceGroups = [
   {
     title: "Context",
     references: ["mary-orthodoxwiki"],
+  },
+];
+
+export const georgeOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Greatmartyr",
+    title: "Victory Through Confession",
+    body: [
+      "Saint George is remembered as a soldier who chose the confession of Christ over imperial favor. His victory is not the triumph of worldly power, but the courage to suffer rather than worship falsely.",
+      "The OCA life places him under Diocletian's persecution, where his rank and promise could have made silence easy. Instead, George gives away his goods, frees his servants, and openly declares himself Christian.",
+      "For that reason, the Church calls him Greatmartyr, Trophy-bearer, Victory-bearer, and Wonderworker: titles that name Christ's victory shining through his endurance.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Dragon",
+    title: "The Dragon As Icon Of Deliverance",
+    body: [
+      "The dragon story is central to Saint George's iconography. Its details vary by local tradition, but its meaning is clear in Orthodox memory: a city held in fear is delivered through the power of Christ.",
+      "George does not appear as a private hero collecting glory. He protects the vulnerable and turns the attention of the people toward the living God.",
+      "Read beside his martyrdom, the dragon image becomes more than adventure. It is a visible sign of the same victory over death, idolatry, and terror that his confession reveals.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Trophy-Bearer And Wonderworker",
+    body: [
+      "Orthodox sources call him George the Trophy-bearer, George the Victory-bearer, Greatmartyr George, and the Wonderworker. These names hold together his martyrdom and his continuing intercession.",
+      "His main feast is April 23, while some calendars also remember the translation of his relics in November.",
+      "Because the dragon tradition has variant settings, this page keeps the geography modest and emphasizes the theological shape of the story rather than one exclusive location.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+];
+
+export const georgeTimeline: TimelineEntry[] = [
+  {
+    label: "Formation",
+    title: "A Christian Soldier",
+    body: [
+      "George is remembered as born to Christian parents and raised in faith after the martyrdom of his father. His life begins with inherited courage before it becomes his own public confession.",
+      "He entered military service and rose in rank, showing that he was not hidden from the structures of Roman power.",
+      "That position made his later witness sharper: he knew what he was losing when he refused to join the persecution.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+  {
+    label: "Confession",
+    title: "Before Diocletian",
+    body: [
+      "When Diocletian's persecution intensified, George distributed his possessions, freed his servants, and appeared before the emperor as a Christian.",
+      "The tradition presents this as deliberate obedience rather than accidental exposure. George steps into danger with his life already offered to God.",
+      "His confession shows a soldier's courage transformed by faith: loyalty to Christ stands above loyalty to imperial command.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    label: "Endurance",
+    title: "Torture And Deliverance",
+    body: [
+      "George is remembered as enduring repeated tortures and miraculous deliverances. The point of these stories is not spectacle, but the weakness of violence before Christ's power.",
+      "His endurance strengthens others who see him suffer without renouncing the faith.",
+      "The martyr's body becomes a place where imperial threats fail to command the soul.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    label: "Witness",
+    title: "Others Drawn To Christ",
+    body: [
+      "The tradition remembers George's witness leading others to confess Christ, including Empress Alexandra in the hagiographic account.",
+      "Martyrdom is never isolated in these stories. One person's faith becomes a lamp for others under the same fear.",
+      "George's courage therefore bears fruit beyond himself, revealing the Church's memory of martyrdom as missionary witness.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    label: "Dragon",
+    title: "Delivering The City",
+    body: [
+      "The dragon-serpent tradition remembers George rescuing a princess and city from terror. In icons, he subdues the beast with a spear while remaining calm and radiant.",
+      "The story is read as deliverance rather than conquest for its own sake. The vulnerable are protected, fear is broken, and the people are turned toward Christ.",
+      "This is why George's image became so beloved: it gives visible form to the victory of faith over the powers that devour human life.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+  {
+    label: "Martyrdom",
+    title: "The Crown Of April 23",
+    body: [
+      "George was beheaded on April 23, traditionally in 303. The Church keeps that day as his principal feast.",
+      "His death does not erase the word victory from his titles. It explains it: victory belongs to Christ, who makes the martyr's suffering fruitful.",
+      "The soldier who seemed defeated becomes the Trophy-bearer, remembered across the Orthodox world as a protector and intercessor.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+];
+
+export const georgeTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Confession",
+    title: "Christ Above Fear",
+    body: [
+      "George teaches public courage when silence would be easier. His confession costs him rank, safety, and life.",
+      "That courage is not self-assertion. It is loyalty to Christ when false worship demands obedience.",
+      "His witness remains a pattern for Christians facing pressure to make peace with idolatry.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    eyebrow: "Almsgiving",
+    title: "Freedom Before Suffering",
+    body: [
+      "Before his martyrdom, George gives away his possessions and frees his servants. This act reveals an inward freedom before the tortures begin.",
+      "He does not cling to what persecution can take. He turns his goods into mercy.",
+      "The martyr's courage is therefore joined to practical charity.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    eyebrow: "Endurance",
+    title: "The Body As Witness",
+    body: [
+      "The remembered tortures of George show endurance as a form of testimony. His body suffers, but his confession remains whole.",
+      "Orthodox martyr stories do not glorify cruelty. They glorify Christ, whose strength is made visible in those who endure.",
+      "George's patience teaches that faithfulness can be stronger than force.",
+    ],
+    references: ["george-oca-life"],
+  },
+  {
+    eyebrow: "Protection",
+    title: "The Vulnerable Are Not Forgotten",
+    body: [
+      "The dragon icon places George between the beast and those it threatens. It teaches protection as a form of holy courage.",
+      "The saint's strength is used for deliverance, not domination.",
+      "That image helps explain why generations have loved him as intercessor and protector.",
+    ],
+    references: ["george-oca-life", "george-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Victory",
+    title: "The Trophy Is Christ's",
+    body: [
+      "George is called Trophy-bearer because the trophy is not personal fame. It is the sign of Christ's victory in a martyr.",
+      "His life teaches that death and terror do not have the final word.",
+      "The dragon, the emperor, and the sword all become small beside the risen Lord.",
+    ],
+    references: ["george-orthodoxwiki", "george-oca-life"],
+  },
+];
+
+export const georgeSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["george-oca-life"],
+  },
+  {
+    title: "Context",
+    references: ["george-orthodoxwiki"],
+  },
+];
+
+export const ninoOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Equal-to-the-Apostles",
+    title: "The Enlightener Of Georgia",
+    body: [
+      "Saint Nino is remembered as Equal-to-the-Apostles because her mission helped root the Christian faith in Georgia. Her witness is patient, humble, and deeply marked by prayer.",
+      "The OCA life presents her calling as guided by the Theotokos and symbolized by the grapevine cross, a fragile sign carried into a nation.",
+      "Her mission shows evangelism through holiness rather than force: preaching, healing, prayer, and the repentance of rulers and people.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Cross",
+    title: "The Grapevine Cross",
+    body: [
+      "Nino's grapevine cross is one of the most recognizable signs in Georgian Christian memory. It is associated with the Theotokos' blessing and with Nino's apostolic work.",
+      "The cross is humble in material but immense in meaning. It is not an imperial standard; it is a living branch bound for mission.",
+      "In Nino's hands, the Cross becomes the shape of Georgia's conversion: rooted, patient, and fruitful.",
+    ],
+    references: ["nino-oca-life", "nino-oca-entrance", "nino-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Nino, Nina, And Iberia",
+    body: [
+      "Nino is the Georgian form of her name, while Nina is common in Slavic and English Orthodox usage. Sources also call her Nino of Cappadocia and Enlightener of Iberia or Georgia.",
+      "Her principal feast is January 14, while her entrance into Georgia is also commemorated on May 19.",
+      "Some sources vary on exact dates in her life, so this page keeps the period broad: late third to fourth century.",
+    ],
+    references: ["nino-oca-life", "nino-oca-entrance", "nino-orthodoxwiki"],
+  },
+];
+
+export const ninoTimeline: TimelineEntry[] = [
+  {
+    label: "Cappadocia",
+    title: "A Child Of Christian Memory",
+    body: [
+      "Nino is remembered as born in Cappadocia and connected by tradition to Saint George's family. Her origins place her within a world already marked by martyrdom and apostolic memory.",
+      "She was raised in Christian instruction, with Jerusalem also playing a formative role in the tradition.",
+      "Before she becomes Georgia's enlightener, she is formed as a daughter of the Church.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+  {
+    label: "Calling",
+    title: "The Theotokos And The Cross",
+    body: [
+      "The Life remembers Nino receiving a vision of the Theotokos and the gift of a grapevine cross.",
+      "This calling gives her mission its tone: she travels not as a political agent, but as a servant sent under the sign of the Cross.",
+      "The cross she carries is small and organic, but it becomes the visible sign of a national conversion.",
+    ],
+    references: ["nino-oca-life"],
+  },
+  {
+    label: "Journey",
+    title: "Through Persecution Toward Georgia",
+    body: [
+      "Nino is connected with the company of holy women around Rhipsimia and Gaiana, whose story includes Armenian persecution.",
+      "She escapes and continues toward Georgia, carrying the mission she had received.",
+      "Her entrance into Georgia is important enough to receive its own commemoration in the Georgian tradition.",
+    ],
+    references: ["nino-oca-life", "nino-oca-entrance"],
+  },
+  {
+    label: "Mtskheta",
+    title: "Prayer Against Idols",
+    body: [
+      "In Georgia, Nino begins preaching and praying in Mtskheta. The sources remember her witness against idolatry and her quiet work among the people.",
+      "She does not conquer by force. She bears witness through prayer, humility, and the Cross.",
+      "The city becomes the place where hidden mission starts to become public transformation.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+  {
+    label: "Royal conversion",
+    title: "Queen Nana And King Mirian",
+    body: [
+      "Nino is remembered as healing Queen Nana, whose conversion becomes one of the turning points in Georgia's Christian story.",
+      "King Mirian later repents after a crisis while hunting and turns toward Christ.",
+      "The conversion of rulers is not presented as flattery of power, but as repentance brought about through prayer and divine mercy.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+  {
+    label: "Bodbe",
+    title: "A Mission That Takes Root",
+    body: [
+      "Nino reposed at Bodbe, where a church was built over her grave. Her memory remains inseparable from Georgian Christian identity.",
+      "The saint who came as a stranger becomes the mother of a people's faith.",
+      "Her life closes in the same key in which it began: obedience to the Cross, trust in the Theotokos, and humble witness to Christ.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+];
+
+export const ninoTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Mission",
+    title: "Evangelism Without Force",
+    body: [
+      "Nino's mission teaches that evangelism can be patient, gentle, and still powerful. She does not rely on coercion.",
+      "Her witness moves through prayer, healing, counsel, and endurance.",
+      "The result is not a private conversion only, but the illumination of a people.",
+    ],
+    references: ["nino-oca-life"],
+  },
+  {
+    eyebrow: "Theotokos",
+    title: "Sent Under The Mother Of God",
+    body: [
+      "The Theotokos' role in Nino's calling shows mission as received, not self-invented.",
+      "Nino carries the Cross because she is sent. Her courage is obedience before it is accomplishment.",
+      "This gives her apostolic title a Marian tenderness: the Enlightener goes as one under protection.",
+    ],
+    references: ["nino-oca-life"],
+  },
+  {
+    eyebrow: "Cross",
+    title: "Fruitfulness From Humility",
+    body: [
+      "The grapevine cross is fragile, living, and lowly. It is an image of Christian fruitfulness rather than worldly force.",
+      "Nino's life teaches that the Cross can take root in a whole culture through humble faithfulness.",
+      "The sign she carries becomes a pattern for the mission itself.",
+    ],
+    references: ["nino-oca-life", "nino-oca-entrance"],
+  },
+  {
+    eyebrow: "Healing",
+    title: "Mercy Opens The Ear",
+    body: [
+      "The healing of Queen Nana shows mercy as a path toward faith. Nino's preaching is joined to compassion for suffering.",
+      "Healing does not become performance. It becomes testimony to Christ.",
+      "The body restored becomes a sign that the soul and nation are being called to life.",
+    ],
+    references: ["nino-oca-life"],
+  },
+  {
+    eyebrow: "Repentance",
+    title: "Rulers Also Must Turn",
+    body: [
+      "King Mirian's conversion teaches that authority also stands under repentance.",
+      "Nino's mission does not flatter kings. It calls them into the same truth as everyone else.",
+      "The Christianization of Georgia is therefore remembered as mercy and repentance, not simply royal policy.",
+    ],
+    references: ["nino-oca-life", "nino-orthodoxwiki"],
+  },
+];
+
+export const ninoSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["nino-oca-life", "nino-oca-entrance"],
+  },
+  {
+    title: "Context",
+    references: ["nino-orthodoxwiki"],
+  },
+];
+
+export const gabrielOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Modern confessor",
+    title: "Faith Under Soviet Atheism",
+    body: [
+      "Saint Gabriel of Georgia is remembered as a modern confessor whose life unfolded under official atheism. His witness was public, costly, and often misunderstood.",
+      "Born Goderdzi Urgebadze, he became the monk Gabriel and lived with a fearless love for Christ that no political ideology could domesticate.",
+      "His holiness is not presented as polished respectability. It is the wounded, humble, prophetic holiness of a fool-for-Christ.",
+    ],
+    references: ["gabriel-official-life", "gabriel-acrod"],
+  },
+  {
+    eyebrow: "Fool-for-Christ",
+    title: "Holiness Hidden Beneath Humility",
+    body: [
+      "Gabriel's title fool-for-Christ points to a form of sanctity that hides itself from praise and exposes false wisdom.",
+      "His life includes apparent strangeness, but the deeper pattern is love, repentance, discernment, and compassion.",
+      "He became an elder not by managing an image, but by allowing humility and suffering to make room for grace.",
+    ],
+    references: ["gabriel-official", "gabriel-official-life"],
+  },
+  {
+    eyebrow: "Samtavro",
+    title: "An Elder Of Love And Repentance",
+    body: [
+      "In his later years at Samtavro, Gabriel received pilgrims, gave counsel, and became known for teachings centered on love and repentance.",
+      "The same man persecuted as dangerous and unstable became a spiritual father to many.",
+      "His feast is kept on November 2, and his memory remains especially beloved in Georgia.",
+    ],
+    references: ["gabriel-official", "gabriel-acrod"],
+  },
+];
+
+export const gabrielTimeline: TimelineEntry[] = [
+  {
+    label: "Tbilisi",
+    title: "Goderdzi Hears Of Christ",
+    body: [
+      "Gabriel was born Goderdzi Urgebadze in Tbilisi in 1929. The official life remembers him as a child deeply moved when he first heard about Christ.",
+      "He sought the Gospel and began orienting his life toward God even in an environment hostile to open Christian faith.",
+      "His childhood already shows the pattern of his life: direct response to Christ, without waiting for approval.",
+    ],
+    references: ["gabriel-official-life"],
+  },
+  {
+    label: "Monastic calling",
+    title: "The Monk Gabriel",
+    body: [
+      "After military service and years of hidden devotion, he was tonsured monk Gabriel in 1955 and ordained to priestly service.",
+      "He built a church in his yard and gathered discarded icons, treating what others rejected as worthy of reverence.",
+      "This practical devotion shows his love for the Church in small, stubborn acts.",
+    ],
+    references: ["gabriel-official-life", "gabriel-acrod"],
+  },
+  {
+    label: "Confession",
+    title: "The Lenin Portrait",
+    body: [
+      "In 1965 Gabriel burned a Lenin portrait during a public demonstration and confessed Christ against Soviet idolatry.",
+      "He was beaten, imprisoned, and confined in psychiatric institutions. The state treated his confession as madness.",
+      "The Church later remembered the same act as witness: a fool-for-Christ exposing false worship.",
+    ],
+    references: ["gabriel-official-life", "gabriel-acrod"],
+  },
+  {
+    label: "Suffering",
+    title: "Humiliation And Hiddenness",
+    body: [
+      "Gabriel's life after persecution included poverty, misunderstanding, and forms of self-concealment.",
+      "He did not build holiness by public approval. His path passed through humiliation, illness, and dependence on God's mercy.",
+      "This makes his later authority tender rather than distant.",
+    ],
+    references: ["gabriel-official-life", "gabriel-official"],
+  },
+  {
+    label: "Samtavro",
+    title: "Receiving The People",
+    body: [
+      "At Samtavro Monastery, Gabriel became known as an elder who received pilgrims and spoke with sharp, compassionate discernment.",
+      "His teaching returned again and again to love, repentance, humility, and fidelity to Orthodoxy.",
+      "The confessor who had been cast aside became a father to those seeking life.",
+    ],
+    references: ["gabriel-official-life", "gabriel-official"],
+  },
+  {
+    label: "Canonization",
+    title: "A Saint Beloved In Georgia",
+    body: [
+      "Gabriel reposed on November 2, 1995. The Georgian Orthodox Church canonized him in 2012.",
+      "His relics are venerated at Samtavro, and his memory continues through stories, sayings, and gratitude from those helped by his prayers.",
+      "His life remains a modern witness that love can endure ideological pressure, shame, and suffering.",
+    ],
+    references: ["gabriel-official", "gabriel-acrod"],
+  },
+];
+
+export const gabrielTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Love",
+    title: "The Center Is Love",
+    body: [
+      "Gabriel's teaching is remembered above all for love. Love is not softness without truth; it is the mark of life in Christ.",
+      "His counsel repeatedly turns the heart away from contempt and toward mercy.",
+      "This is why his severity, when present, is pastoral rather than cold.",
+    ],
+    references: ["gabriel-official", "gabriel-official-life"],
+  },
+  {
+    eyebrow: "Repentance",
+    title: "Do Not Delay The Turn",
+    body: [
+      "Gabriel's life urges repentance without postponement. He knew that public pressure and inner confusion can both numb the conscience.",
+      "Repentance, for him, is not vague religious feeling. It is returning to Christ with the whole life.",
+      "His own broken and radiant path gives that counsel weight.",
+    ],
+    references: ["gabriel-official-life"],
+  },
+  {
+    eyebrow: "Confession",
+    title: "False Worship Must Be Named",
+    body: [
+      "The burning of the Lenin portrait shows Gabriel's refusal to let ideology take the place of God.",
+      "The act was dangerous and costly, but it revealed the core of confession: Christ alone is Lord.",
+      "His witness teaches courage without hatred.",
+    ],
+    references: ["gabriel-official-life", "gabriel-acrod"],
+  },
+  {
+    eyebrow: "Humility",
+    title: "Self-Concealment As Freedom",
+    body: [
+      "As a fool-for-Christ, Gabriel often hid holiness beneath forms that could not be easily praised.",
+      "This is not theatrics for attention. It is a way of escaping vanity and exposing pride.",
+      "His hiddenness makes his love more credible.",
+    ],
+    references: ["gabriel-official", "gabriel-official-life"],
+  },
+  {
+    eyebrow: "Compassion",
+    title: "No One Outside Mercy",
+    body: [
+      "Gabriel's elderhood was marked by compassion for the people who came to him, even when his words were direct.",
+      "He saw persons, not categories.",
+      "That compassion is part of his modern power: in a century of ideologies, he answered with personal love.",
+    ],
+    references: ["gabriel-official", "gabriel-acrod"],
+  },
+];
+
+export const gabrielSourceGroups = [
+  {
+    title: "Official Sources",
+    references: ["gabriel-official-life", "gabriel-official"],
+  },
+  {
+    title: "Diocesan Summary",
+    references: ["gabriel-acrod"],
+  },
+];
+
+export const johnOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Diaspora hierarch",
+    title: "A Bishop For The Scattered",
+    body: [
+      "Saint John of Shanghai and San Francisco is remembered as a modern Orthodox bishop whose ministry followed displaced people across continents.",
+      "His life moves from the Russian Revolution and Serbia to Shanghai, Western Europe, and San Francisco. In each place, his episcopal service took the form of prayer, liturgy, orphan care, refugee help, and pastoral endurance.",
+      "He is called the Wonderworker not as a decorative title, but because the Church remembers his intercession as inseparable from his compassion.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki", "john-monastery"],
+  },
+  {
+    eyebrow: "Ascetic pastor",
+    title: "Prayer At The Center",
+    body: [
+      "John's pastoral work was rooted in intense liturgical life and ascetic discipline. The sources remember him as a bishop who prayed constantly and served the divine services with extraordinary devotion.",
+      "This prayer did not draw him away from suffering people. It sent him toward them.",
+      "His care for orphans, the sick, and refugees shows a vision of episcopacy as service rather than status.",
+    ],
+    references: ["john-oca-life", "john-monastery"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Shanghai And San Francisco",
+    body: [
+      "He is known as John Maximovitch, John the Wonderworker, and Archbishop John of Shanghai and San Francisco. His baptismal name was Michael.",
+      "His feast is July 2, the New Calendar date corresponding to his repose on June 19 Old Style.",
+      "The double place-name matters because his sanctity belongs to the modern Orthodox diaspora: China, Europe, and America all appear in his story.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+];
+
+export const johnTimeline: TimelineEntry[] = [
+  {
+    label: "1896",
+    title: "Michael Maximovitch",
+    body: [
+      "John was born Michael Maximovitch in 1896 in the Kharkiv region. His early life was marked by piety, education, and the upheaval that followed the Russian Revolution.",
+      "His family eventually fled, and he continued his formation in Serbia.",
+      "Displacement becomes one of the hidden keys to his later ministry among refugees.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+  {
+    label: "Belgrade",
+    title: "Monk And Priest",
+    body: [
+      "In Belgrade he studied theology and was tonsured with the name John. He was ordained hierodeacon and hieromonk in the 1920s.",
+      "The monk who would later cross continents was first formed in obedience, teaching, and prayer.",
+      "His episcopal care would always keep this monastic seriousness at its core.",
+    ],
+    references: ["john-oca-life"],
+  },
+  {
+    label: "Shanghai",
+    title: "Bishop Of Refugees And Orphans",
+    body: [
+      "In 1934 John was consecrated Bishop of Shanghai. There he served a large Russian emigre community, built churches, and cared for children and the poor.",
+      "The sources especially remember his orphanage and his attention to those overlooked by others.",
+      "Shanghai reveals his pastoral pattern: liturgy, charity, and direct care woven together.",
+    ],
+    references: ["john-oca-life", "john-monastery"],
+  },
+  {
+    label: "Tubabao",
+    title: "Leading The Displaced",
+    body: [
+      "After the Communist takeover in China, John helped lead Orthodox refugees from Shanghai to the island of Tubabao and worked for their resettlement.",
+      "This episode shows episcopal authority as advocacy for people without security.",
+      "The bishop becomes a father precisely where history has made people homeless.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+  {
+    label: "West",
+    title: "Europe And San Francisco",
+    body: [
+      "John served in Western Europe and then in San Francisco, where his ministry included both sanctity and conflict.",
+      "He helped complete the cathedral and continued caring for the suffering, while also enduring misunderstanding and accusation.",
+      "His life shows that holiness does not remove church difficulties, but transforms how they are borne.",
+    ],
+    references: ["john-oca-life", "john-monastery"],
+  },
+  {
+    label: "1966",
+    title: "Repose And Glorification",
+    body: [
+      "John reposed in Seattle on July 2, 1966. He was glorified by ROCOR in 1994, and his relics are venerated in San Francisco.",
+      "His memory continues as a modern witness of prayerful intercession and pastoral care.",
+      "The scattered communities he served became the map of his sanctity.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+];
+
+export const johnTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Liturgy",
+    title: "The Services As The Heart",
+    body: [
+      "John's life teaches that pastoral action begins in worship. The divine services were not an ornament to his ministry; they were its center.",
+      "His prayer gave his care for people depth and stamina.",
+      "The bishop who ran to hospital rooms and orphanages also stood first before God.",
+    ],
+    references: ["john-oca-life", "john-monastery"],
+  },
+  {
+    eyebrow: "Mercy",
+    title: "Orphans, Refugees, And The Sick",
+    body: [
+      "John's holiness is visible in his attention to vulnerable people: children, refugees, the sick, and the poor.",
+      "He did not separate wonderworking from practical mercy.",
+      "His intercession has the texture of lived compassion.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Humility",
+    title: "Authority Without Comfort",
+    body: [
+      "John's episcopal authority did not make his life comfortable. He endured conflict, accusation, and exhaustion.",
+      "His humility is shown in his willingness to keep serving without needing the work to look tidy.",
+      "This gives his modern witness a bracing realism.",
+    ],
+    references: ["john-oca-life"],
+  },
+  {
+    eyebrow: "Intercession",
+    title: "Prayer That Follows People",
+    body: [
+      "The Church remembers John as a wonderworker because his care did not stop at visible administration.",
+      "His prayer followed the people entrusted to him: across borders, hospitals, courtrooms, and graves.",
+      "His life teaches confidence that pastoral love can become intercession before God.",
+    ],
+    references: ["john-monastery", "john-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Diaspora",
+    title: "Holiness In Exile",
+    body: [
+      "John's life speaks strongly to displaced communities. Exile becomes not a place outside holiness, but a place where the Church learns dependence on God.",
+      "He carried continuity without nostalgia becoming paralysis.",
+      "His ministry shows that Orthodoxy can take root wherever prayer, mercy, and truth are kept.",
+    ],
+    references: ["john-oca-life", "john-orthodoxwiki"],
+  },
+];
+
+export const johnSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["john-oca-life", "john-monastery"],
+  },
+  {
+    title: "Context",
+    references: ["john-orthodoxwiki"],
+  },
+];
+
+export const mariaOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Righteous martyr",
+    title: "Monasticism In The World",
+    body: [
+      "Saint Maria of Paris is remembered for a form of monastic life lived among the hungry, displaced, imprisoned, and persecuted.",
+      "Her Paris houses of hospitality were not social work detached from prayer. They were a concrete answer to Christ present in the neighbor.",
+      "Her martyrdom under Nazism completes a life already given away in daily acts of service.",
+    ],
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    eyebrow: "Hospitality",
+    title: "The Neighbor As Icon",
+    body: [
+      "Mother Maria's teaching and life center on seeing every person as the image of God. This conviction became bread, shelter, forged documents, prison visits, and protection.",
+      "Her love was not abstract. It entered kitchens, cold rooms, crowded refugee lives, and mortal danger.",
+      "The saint of Paris teaches that theology becomes true when the person before us is received as Christ's own.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki", "maria-acrod"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Mother Maria Of Paris",
+    body: [
+      "She is known as Mother Maria, Maria Skobtsova, Maria of Paris, Saint Mary of Paris, and Righteous Martyr Maria. She was born Elizaveta Pilenko.",
+      "The OCA keeps her feast on July 20, while some references also note March 31, the date of her death at Ravensbruck.",
+      "Her many names reflect the many parts of her life: poet, exile, mother, nun, servant of the poor, rescuer, and martyr.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+];
+
+export const mariaTimeline: TimelineEntry[] = [
+  {
+    label: "1891",
+    title: "Elizaveta Pilenko",
+    body: [
+      "Maria was born Elizaveta Pilenko in Riga in 1891. Her early life passed through literary, political, and religious searching.",
+      "She later experienced revolution, civil war, exile, marriage, motherhood, grief, and poverty.",
+      "Her sanctity does not begin as a tidy story. It is formed through loss and conversion of direction.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+  {
+    label: "Exile",
+    title: "Russia To Paris",
+    body: [
+      "After the Russian upheavals and civil war, she eventually came to Paris among the emigre community.",
+      "There she encountered the suffering of refugees and the destitute not as an issue, but as a summons.",
+      "Paris became the place where her theological imagination turned into concrete hospitality.",
+    ],
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    label: "Tonsure",
+    title: "Mother Maria",
+    body: [
+      "After the death of her daughter Anastasia and a deepening turn toward service, she was tonsured a nun with the name Maria in 1932.",
+      "Her monastic vocation was blessed for life in the world, among the suffering.",
+      "This calling gave shape to the houses of hospitality that followed.",
+    ],
+    references: ["maria-oca-life"],
+  },
+  {
+    label: "Hospitality",
+    title: "Houses For The Poor",
+    body: [
+      "In the 1930s, Mother Maria opened houses where refugees, the hungry, and the homeless could find shelter, food, and care.",
+      "She wrote, cooked, begged, organized, prayed, and received people whom respectable society often avoided.",
+      "Her hospitality was not sentimental; it was exhausting, risky, and sacramental in vision.",
+    ],
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    label: "Occupation",
+    title: "Protecting The Persecuted",
+    body: [
+      "During Nazi occupation, Mother Maria and her companions helped persecuted Jews and prisoners, including through baptismal certificates and direct aid.",
+      "The work placed them in danger because love of neighbor now required resistance to dehumanizing power.",
+      "Her Christian hospitality widened into martyrdom.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+  {
+    label: "Ravensbruck",
+    title: "A Life Given Away",
+    body: [
+      "Mother Maria was arrested in 1943 and died at Ravensbruck in 1945. She was later glorified with her companions.",
+      "Her death is remembered as the final offering of a life already poured out for others.",
+      "The Church honors her as righteous martyr, not because service replaced faith, but because service revealed faith.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+];
+
+export const mariaTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Personhood",
+    title: "Every Person Is An Icon",
+    body: [
+      "Mother Maria's witness begins with the person before her. The poor, refugee, prisoner, and persecuted neighbor are not abstractions.",
+      "To receive them is to receive the image of God.",
+      "Her theology is therefore intensely concrete.",
+    ],
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    eyebrow: "Hospitality",
+    title: "A Table As An Altar Of Mercy",
+    body: [
+      "Food, shelter, and warmth become holy in Maria's life because they answer Christ's commandment of love.",
+      "Hospitality is not secondary to prayer. It is prayer becoming visible in the body.",
+      "Her houses in Paris show mercy as a daily discipline.",
+    ],
+    references: ["maria-oca-life"],
+  },
+  {
+    eyebrow: "Monasticism",
+    title: "The Cell Opens To The Street",
+    body: [
+      "Maria's monasticism was lived in the world, not as compromise but as vocation.",
+      "The street, kitchen, prison, and refuge became places of obedience.",
+      "Her life broadens the imagination of asceticism without weakening its seriousness.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Resistance",
+    title: "Love Against Dehumanization",
+    body: [
+      "Under Nazi occupation, love of neighbor required resistance to an ideology that marked people for destruction.",
+      "Mother Maria's rescue work shows Christian mercy becoming dangerous.",
+      "She teaches that neutrality can fail when the image of God is attacked.",
+    ],
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    eyebrow: "Martyrdom",
+    title: "The Last Gift",
+    body: [
+      "Her martyrdom at Ravensbruck is not separate from the soup, shelter, documents, and prison visits that came before it.",
+      "It is the final form of the same self-giving love.",
+      "Maria's death reveals the cost and glory of seeing Christ in the neighbor.",
+    ],
+    references: ["maria-oca-life", "maria-orthodoxwiki"],
+  },
+];
+
+export const mariaSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["maria-oca-life", "maria-acrod"],
+  },
+  {
+    title: "Context",
+    references: ["maria-orthodoxwiki"],
+  },
+];
+
+export const nektariosOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Modern hierarch",
+    title: "Patience Under Slander",
+    body: [
+      "Saint Nektarios of Aegina is remembered as a hierarch who endured slander, unjust removal, poverty, and misunderstanding with patience.",
+      "His life is not a simple rise to honor. It is the story of a bishop made humble through suffering and made fruitful through forgiveness.",
+      "The Church remembers him as a wonderworker because his pastoral love continued through healing intercession.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Aegina",
+    title: "A Father And Builder",
+    body: [
+      "After his trials in Alexandria and years of service in Greece, Nektarios became especially associated with the Holy Trinity Monastery on Aegina.",
+      "There his spiritual fatherhood, teaching, writing, and care for monastic life matured.",
+      "Aegina becomes the place where public humiliation is transfigured into hidden fruitfulness.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-monastery"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Nektarios Of Pentapolis",
+    body: [
+      "He is known as Nektarios of Aegina, Nektarios of Pentapolis, Nectarius Kephalas, and Metropolitan of Pentapolis. He was born Anastasius Kephalas.",
+      "His feast is November 9, though he reposed on November 8, because that day is already the Synaxis of the Archangel Michael.",
+      "The spelling varies between Nektarios, Nectarios, and Nectarius in English sources.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+];
+
+export const nektariosTimeline: TimelineEntry[] = [
+  {
+    label: "1846",
+    title: "Anastasius Kephalas",
+    body: [
+      "Nektarios was born Anastasius Kephalas in Selymbria in 1846. His early life included poverty, work, and a hunger for education.",
+      "As a young man he went to Constantinople and later served as a teacher on Chios.",
+      "Learning and pastoral formation were woven into his calling from the beginning.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+  {
+    label: "Monastic life",
+    title: "The Name Nektarios",
+    body: [
+      "He became a monk and received the name Nektarios, later being ordained deacon and priest.",
+      "His monastic identity remained important even when he later served as bishop and educator.",
+      "The saint's authority grew from prayer, study, humility, and obedience.",
+    ],
+    references: ["nektarios-oca-life"],
+  },
+  {
+    label: "Pentapolis",
+    title: "A Bishop Unjustly Removed",
+    body: [
+      "In 1889 he was consecrated Metropolitan of Pentapolis in the Church of Alexandria.",
+      "Soon after, slander and jealousy led to his unjust dismissal. The wound of that injustice marks the rest of his story.",
+      "Nektarios endured without retaliation, giving the Church one of its clearest modern images of patience under false accusation.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+  {
+    label: "Athens",
+    title: "Teacher And Spiritual Father",
+    body: [
+      "Back in Greece, Nektarios preached, wrote, and eventually directed the Rizarios Seminary in Athens.",
+      "His work formed clergy and students, even while his own reputation remained burdened by injustice.",
+      "Education becomes part of his pastoral service: patient formation rather than self-defense.",
+    ],
+    references: ["nektarios-oca-life"],
+  },
+  {
+    label: "Aegina",
+    title: "Holy Trinity Monastery",
+    body: [
+      "Nektarios founded and guided the Holy Trinity Monastery on Aegina, caring for the community with tenderness and discipline.",
+      "The monastery gave visible shape to his spiritual fatherhood after years of displacement.",
+      "His final years were marked by work, illness, prayer, and the quiet dignity of a life surrendered to God.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-monastery"],
+  },
+  {
+    label: "1920",
+    title: "Repose And Healing Memory",
+    body: [
+      "Nektarios reposed in Athens in 1920 and was canonized in 1961.",
+      "The Church remembers many healings through his intercession, especially among those suffering serious illness.",
+      "His memory offers hope that injustice borne in humility can become a source of life for others.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+];
+
+export const nektariosTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Patience",
+    title: "Enduring Slander Without Revenge",
+    body: [
+      "Nektarios' life teaches patience under false accusation. He does not make vindication the center of his identity.",
+      "His silence is not weakness. It is trust that God sees what human judgment obscures.",
+      "This patience gives his holiness unusual tenderness.",
+    ],
+    references: ["nektarios-oca-life"],
+  },
+  {
+    eyebrow: "Humility",
+    title: "A Bishop Made Lowly",
+    body: [
+      "His episcopal dignity was stripped of worldly security, but not of grace.",
+      "Nektarios shows that office becomes holy when joined to humility.",
+      "The title Metropolitan of Pentapolis remains, but the deeper title is servant of Christ.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Formation",
+    title: "Teaching As Pastoral Care",
+    body: [
+      "Nektarios' work as teacher and seminary director shows education as a form of spiritual fatherhood.",
+      "He cared about the formation of clergy and souls, not only the transmission of information.",
+      "His writings and teaching belong to the same pastoral heart as his prayer.",
+    ],
+    references: ["nektarios-oca-life"],
+  },
+  {
+    eyebrow: "Healing",
+    title: "Intercession For The Sick",
+    body: [
+      "The Church remembers Nektarios as a healer and wonderworker, especially for the seriously ill.",
+      "His healing intercession does not stand apart from his own suffering.",
+      "The wounded pastor becomes an intercessor for the wounded.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-monastery"],
+  },
+  {
+    eyebrow: "Mother of God",
+    title: "Prayer With Marian Warmth",
+    body: [
+      "Nektarios is also remembered for devotion to the Theotokos, including hymnographic love associated with Agni Parthene.",
+      "This devotion fits his whole life: patient, tender, and deeply ecclesial.",
+      "His prayer teaches confidence in intercession and the mercy of God.",
+    ],
+    references: ["nektarios-oca-life", "nektarios-orthodoxwiki"],
+  },
+];
+
+export const nektariosSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["nektarios-oca-life", "nektarios-monastery"],
+  },
+  {
+    title: "Context",
+    references: ["nektarios-orthodoxwiki"],
+  },
+];
+
+export const seraphimOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Russian elder",
+    title: "Joy From Hidden Fire",
+    body: [
+      "Saint Seraphim of Sarov is remembered as a Russian monk, hermit, elder, and wonderworker whose later joy was born from long hidden ascetic struggle.",
+      "His greeting, spiritual warmth, and fatherly counsel did not come from ease. They came after years of prayer, solitude, illness, violence, and watchfulness.",
+      "His best-known teaching names the aim of Christian life as the acquisition of the Holy Spirit.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Elderhood",
+    title: "The Cell Opens To Pilgrims",
+    body: [
+      "After years of seclusion, Seraphim opened himself to pilgrims as an elder. The hidden ascetic became a source of comfort, discernment, and peace.",
+      "His fatherhood was marked by Paschal joy and deep attention to each person.",
+      "The Sarov forest and the Diveyevo community remain central to how the Church remembers his life.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Feasts",
+    title: "Repose And Relics",
+    body: [
+      "His repose is commemorated on January 2, and the uncovering of his relics is commemorated on July 19.",
+      "The July feast reflects the wider reception of his holiness after his death, especially around his glorification and relics.",
+      "Both commemorations point to the same reality: hidden sanctity becoming joy for the Church.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-oca-relics", "seraphim-orthodoxwiki"],
+  },
+];
+
+export const seraphimTimeline: TimelineEntry[] = [
+  {
+    label: "1754",
+    title: "Prokhor Of Kursk",
+    body: [
+      "Seraphim was born Prokhor Moshnin in Kursk in 1754. Childhood stories remember him preserved from danger and healed through the mercy of God.",
+      "These early memories frame his life as one held by providence.",
+      "Before he becomes the elder of Sarov, he is a child marked by prayer and grace.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    label: "Sarov",
+    title: "Novice And Monk",
+    body: [
+      "In 1778 Prokhor entered Sarov Monastery as a novice. He was later tonsured with the name Seraphim and ordained.",
+      "Monastic obedience, liturgy, labor, and illness all formed him.",
+      "His later solitude grows from community, not from self-invention.",
+    ],
+    references: ["seraphim-oca-life"],
+  },
+  {
+    label: "Hermitage",
+    title: "The Forest Cell",
+    body: [
+      "Seraphim withdrew into the forest for stricter prayer, fasting, and solitude.",
+      "The hermitage was not escape from love. It was the place where the heart was purified for deeper love.",
+      "His hidden life became the root of his later fatherhood.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    label: "Assault",
+    title: "Forgiveness After Violence",
+    body: [
+      "Robbers attacked Seraphim and left him badly injured. He later forgave them and did not seek revenge.",
+      "The story shows his non-resistance as strength, not passivity.",
+      "The wounded monk answers violence with mercy.",
+    ],
+    references: ["seraphim-oca-life"],
+  },
+  {
+    label: "Elder",
+    title: "My Joy",
+    body: [
+      "After long seclusion, Seraphim began receiving pilgrims with warmth and discernment. He famously greeted people with Paschal joy.",
+      "His counsel joined watchfulness, prayer, tenderness, and confidence in the Holy Spirit.",
+      "The hidden monk becomes a father to many because hidden prayer has made him spacious.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    label: "1833",
+    title: "Repose In Prayer",
+    body: [
+      "Seraphim reposed in 1833, remembered as found in prayer. His relics were later uncovered and his veneration spread widely.",
+      "The Church remembers him not only for ascetic feats, but for the joy and peace those feats yielded.",
+      "His life closes as a witness that the Holy Spirit is the true treasure of Christian life.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-oca-relics"],
+  },
+];
+
+export const seraphimTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Holy Spirit",
+    title: "The Aim Of Christian Life",
+    body: [
+      "Seraphim's most famous teaching says that the aim of Christian life is the acquisition of the Holy Spirit.",
+      "Prayer, fasting, vigils, and good works are means ordered toward communion with God.",
+      "This teaching keeps asceticism from becoming an end in itself.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Joy",
+    title: "Paschal Warmth",
+    body: [
+      "Seraphim's joy was not optimism. It was the fruit of repentance and grace.",
+      "His greeting of visitors with joy reveals the resurrection as a lived atmosphere.",
+      "The elder teaches that holiness can become warmth for others.",
+    ],
+    references: ["seraphim-oca-life"],
+  },
+  {
+    eyebrow: "Prayer",
+    title: "Hidden Attention",
+    body: [
+      "His long solitude teaches the value of hidden attention before God.",
+      "The forest cell, prayer rule, and silence are not romantic details. They are the school of the heart.",
+      "Seraphim's later counsel is trustworthy because it has passed through hidden prayer.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Mercy",
+    title: "Forgiving The Attackers",
+    body: [
+      "After being assaulted, Seraphim forgave those who harmed him.",
+      "This mercy shows the Gospel entering the body at the place of injury.",
+      "The elder's tenderness is therefore not naive; it has been tested.",
+    ],
+    references: ["seraphim-oca-life"],
+  },
+  {
+    eyebrow: "Peace",
+    title: "Acquire Peace",
+    body: [
+      "Seraphim's tradition of counsel links inner peace with the salvation of others.",
+      "Peace is not withdrawal from responsibility. It is the presence of grace that makes love possible.",
+      "His life invites readers to seek a heart in which the Holy Spirit can dwell.",
+    ],
+    references: ["seraphim-oca-life", "seraphim-orthodoxwiki"],
+  },
+];
+
+export const seraphimSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["seraphim-oca-life", "seraphim-oca-relics"],
+  },
+  {
+    title: "Context",
+    references: ["seraphim-orthodoxwiki"],
   },
 ];
