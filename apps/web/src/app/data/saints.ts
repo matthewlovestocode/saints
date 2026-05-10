@@ -170,6 +170,48 @@ export const references: Record<string, Reference> = {
     url: "https://www.elpenor.org/athanasius/anthony-life.asp",
     note: "Classic early life of Anthony by Saint Athanasius of Alexandria, one of the formative texts for Christian monastic memory.",
   },
+  "spyridon-oca-life": {
+    id: "spyridon-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/2022/12/12/103526-saint-spyridon-the-wonderworker-bishop-of-tremithus",
+    note: "Eastern Orthodox life of Saint Spyridon the Wonderworker, Bishop of Tremithus, including his Cypriot setting, pastoral charity, Council witness, miracles, and repose.",
+  },
+  "spyridon-oca-hymns": {
+    id: "spyridon-oca-hymns",
+    title: "OCA Hymns",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/troparia/2014/12/12/103526-saint-spyridon-the-wonderworker-bishop-of-tremithus",
+    note: "Troparion and kontakion for Saint Spyridon, commemorated on December 12.",
+  },
+  "spyridon-orthodoxwiki": {
+    id: "spyridon-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Spyridon_of_Trimythous",
+    note: "Secondary overview of Saint Spyridon of Trimythous, his dates, First Council witness, miracles, relics, and Corfu devotion.",
+  },
+  "mary-oca-life": {
+    id: "mary-oca-life",
+    title: "OCA Life",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/lives/20122/04/01/100963-venerable-mary-of-egypt",
+    note: "Eastern Orthodox life of Venerable Mary of Egypt, framed through Saint Zosimas, her repentance, desert struggle, communion, and burial.",
+  },
+  "mary-oca-hymns": {
+    id: "mary-oca-hymns",
+    title: "OCA Hymns",
+    publisher: "Orthodox Church in America",
+    url: "https://www.oca.org/saints/troparia/1982/04/01/100963-venerable-mary-of-egypt",
+    note: "Troparion and kontakion for Saint Mary of Egypt, commemorated on April 1.",
+  },
+  "mary-orthodoxwiki": {
+    id: "mary-orthodoxwiki",
+    title: "OrthodoxWiki",
+    publisher: "OrthodoxWiki",
+    url: "https://orthodoxwiki.org/Mary_of_Egypt",
+    note: "Secondary overview of Saint Mary of Egypt, her repentance, forty-seven years in the desert, meeting with Zosimas, and Lenten commemoration.",
+  },
 };
 
 export function getReferences(ids: string[]) {
@@ -306,11 +348,99 @@ export const saints: Saint[] = [
       },
     ],
   },
+  {
+    name: "Spyridon the Wonderworker",
+    slug: "spyridon-the-wonderworker",
+    titles: [
+      "Spyridon of Tremithus",
+      "Spyridon of Trimythous",
+      "Bishop of Tremithus",
+      "Wonderworker",
+    ],
+    feastDay: "December 12",
+    period: "3rd-4th century; traditional dates c. 270-348",
+    location: "Cyprus; Tremithus and Corfu",
+    summary:
+      "A Cypriot shepherd-bishop remembered for simplicity, generous charity, witness at the First Ecumenical Council, wonderworking, and pastoral love.",
+    image: "/images/spyridon-the-wonderworker.png",
+    facts: [
+      { label: "Commemoration", value: "December 12" },
+      { label: "Tradition", value: "Bishop and wonderworker" },
+      { label: "Place", value: "Cyprus" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/spyridon-the-wonderworker",
+        description: "A researched introduction to Saint Spyridon.",
+      },
+      {
+        title: "Life",
+        href: "/saints/spyridon-the-wonderworker/life",
+        description: "His shepherding, episcopal service, miracles, and repose.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/spyridon-the-wonderworker/teachings",
+        description: "Themes of simplicity, charity, faith, and pastoral mercy.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/spyridon-the-wonderworker/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
+  {
+    name: "Mary of Egypt",
+    slug: "mary-of-egypt",
+    titles: [
+      "Venerable Mary of Egypt",
+      "Desert Ascetic",
+      "Bride of Christ through repentance",
+      "Lenten witness",
+    ],
+    feastDay: "April 1; also the Fifth Sunday of Great Lent",
+    period: "6th century; traditional repose in 522",
+    location: "Egypt, Jerusalem, and the desert beyond the Jordan",
+    summary:
+      "A desert ascetic whose life is remembered as a profound witness to repentance, hidden struggle, communion, humility, and the mercy of God.",
+    image: "/images/mary-of-egypt.png",
+    facts: [
+      { label: "Commemoration", value: "April 1" },
+      { label: "Tradition", value: "Desert ascetic and penitent" },
+      { label: "Place", value: "Beyond the Jordan" },
+    ],
+    pages: [
+      {
+        title: "Overview",
+        href: "/saints/mary-of-egypt",
+        description: "A researched introduction to Saint Mary of Egypt.",
+      },
+      {
+        title: "Life",
+        href: "/saints/mary-of-egypt/life",
+        description: "Her conversion, desert struggle, and meeting with Zosimas.",
+      },
+      {
+        title: "Teachings",
+        href: "/saints/mary-of-egypt/teachings",
+        description: "Themes of repentance, hiddenness, ascetic healing, and communion.",
+      },
+      {
+        title: "Sources",
+        href: "/saints/mary-of-egypt/sources",
+        description: "Primary references for further reading.",
+      },
+    ],
+  },
 ];
 
 export const mosesTheBlack = saints[0];
 export const macariusTheGreat = saints[1];
 export const anthonyTheGreat = saints[2];
+export const spyridonTheWonderworker = saints[3];
+export const maryOfEgypt = saints[4];
 
 export const mosesOverviewSections: ResearchSection[] = [
   {
@@ -1500,5 +1630,335 @@ export const anthonySourceGroups = [
   {
     title: "Context",
     references: ["anthony-orthodoxwiki", "macarius-oca-life"],
+  },
+];
+
+export const spyridonOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Shepherd bishop",
+    title: "Simplicity With Authority",
+    body: [
+      "Saint Spyridon is remembered as a shepherd who became bishop without ceasing to live simply. The OCA life emphasizes that episcopal service did not make him abandon charity, hospitality, or the plainness of his former life.",
+      "His authority is therefore unusual in tone. He is not remembered as a polished rhetorician, but as a father whose direct faith, compassion for the poor, and prayer carried spiritual force.",
+      "That simplicity is central to his memory at the First Ecumenical Council, where his plain confession is set against clever argument and presented as a witness to divine wisdom.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Names",
+    title: "Spyridon Of Tremithus",
+    body: [
+      "The sources name him Spyridon of Tremithus or Trimythous, the Wonderworker, and Bishop of Tremithus. These titles keep together his local Cypriot ministry and the wider Church's memory of miracles through his prayers.",
+      "OrthodoxWiki also notes his veneration in Corfu, where his relics became a major focus of devotion after later translations from Cyprus and Constantinople.",
+      "His feast is kept on December 12, and his memory is also connected with Cheesefare Saturday in the OCA account.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-oca-hymns", "spyridon-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Wonderworking",
+    title: "Miracles Joined To Mercy",
+    body: [
+      "The miracles remembered in Spyridon's life are not detached marvels. They are repeatedly tied to concrete need: sickness, hunger, drought, false accusation, debt, hospitality, and the defense of the faith.",
+      "This gives his wonderworking a pastoral shape. Power appears in service of the vulnerable, the repentant, the falsely accused, and those confused by false teaching.",
+      "Read as a whole, his life presents holiness as the union of right belief, humble speech, open-handed mercy, and prayer that entrusts creation itself to God.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+];
+
+export const spyridonTimeline: TimelineEntry[] = [
+  {
+    label: "Cyprus",
+    title: "A Shepherd Formed In Charity",
+    body: [
+      "Spyridon was born in Cyprus toward the end of the third century. The tradition remembers him first as a shepherd, married, with children, and generous with what he had.",
+      "The OCA life says he used his substance for neighbors and the homeless, and that God rewarded him with wonderworking grace. The starting point is not status, but mercy.",
+      "This early memory matters because Spyridon's later episcopal dignity never erases the shepherd. The bishop remains a man close to ordinary work, hunger, illness, debt, and need.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+  {
+    label: "Bishop",
+    title: "Pastoral Service Without Display",
+    body: [
+      "After the death of his wife, Spyridon was made Bishop of Tremithus during the reign of Constantine the Great. The sources stress that he did not change his manner of life.",
+      "His episcopacy is remembered through deeds of charity rather than distance from the people. He remains simple, available, and practical.",
+      "This is one of the clearest themes in his life: office does not replace humility. In Spyridon, authority is shown as shepherding.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+  {
+    label: "Nicaea",
+    title: "The Brick At The Council",
+    body: [
+      "Spyridon is remembered as present at the First Ecumenical Council in 325, where he answered an Arian-leaning philosopher with direct confession rather than ornate argument.",
+      "The famous sign of the brick gathers the story's meaning. One brick, understood as made of fire, water, and earth, becomes an image for confessing three Persons and one God in the Holy Trinity.",
+      "The point is not cleverness. The tradition presents the miracle as a sign that true theology belongs to humble faith as much as to learned speech.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+  {
+    label: "Mercy",
+    title: "Need, Debt, And Hospitality",
+    body: [
+      "Several stories show Spyridon's charity in ordinary hardship. He is remembered as distributing harvests to the poor and to debtors without records or account books.",
+      "Another story tells of his hospitality to an exhausted traveler at the beginning of the Fast. Spyridon cares first for the man before him, interpreting ascetic practice through mercy.",
+      "Even the story of robbers caught by invisible power ends with counsel, release, and a gift. The saint does not turn their shame into spectacle; he sends them away with a call to honest work.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+  {
+    label: "Miracles",
+    title: "Prayer For The Living And The Dead",
+    body: [
+      "The OCA life remembers Spyridon healing the sick, casting out demons, restoring a dead child to life, saving a falsely condemned friend by commanding floodwaters to halt, and even speaking to his departed daughter about entrusted jewelry.",
+      "These stories are severe and tender at once. They show creation, death, sickness, and human injustice answering to God through the prayers of a humble bishop.",
+      "The miracles are not separate from his pastoral love. They are the visible edge of a life poured out for others.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+  {
+    label: "Repose",
+    title: "Corfu And Continuing Memory",
+    body: [
+      "Spyridon reposed in holiness, traditionally in 348. The OCA life says his relics now repose on Corfu, while OrthodoxWiki preserves the wider account of their translation and continuing veneration.",
+      "Later devotion remembers him as a saint who continues to help the faithful. The title Wonderworker is therefore not only a label for past events, but part of the Church's ongoing memory of his intercession.",
+      "His life closes as it began: with the shepherd-bishop still known for practical mercy, faithful confession, and prayer for those in need.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+];
+
+export const spyridonTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Simplicity",
+    title: "Plain Faith Can Be Deep",
+    body: [
+      "Spyridon's witness at Nicaea teaches that simplicity is not shallowness. His speech is remembered as plain, but it carries the weight of lived faith.",
+      "The tradition does not despise learning. It simply refuses to make cleverness the measure of truth.",
+      "Spyridon shows that theology becomes most luminous when it is joined to humility, prayer, and the life of the Church.",
+    ],
+    references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Charity",
+    title: "Property Held Loosely",
+    body: [
+      "The stories about harvests, debts, travelers, and the poor present Spyridon as a man whose possessions remained available to mercy.",
+      "He does not treat charity as occasional generosity added to a private life. Charity is the shape of his household and his episcopal ministry.",
+      "This gives his holiness a concrete texture: food, shelter, debt relief, hospitality, and trust.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+  {
+    eyebrow: "Mercy",
+    title: "Correction That Restores",
+    body: [
+      "The robbers in the sheepfold story are restrained by divine power, but Spyridon releases them, counsels them, and sends them away with a sheep.",
+      "The scene is almost startling in its kindness. He corrects without humiliating, and he treats repentance as more important than revenge.",
+      "His pastoral authority is strong because it is ordered toward restoration.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+  {
+    eyebrow: "Ascetic measure",
+    title: "Fasting And Love",
+    body: [
+      "The story of the exhausted traveler during the Fast shows Spyridon reading ascetic discipline through love of neighbor.",
+      "He does not make fasting into a display of superiority. The human person before him becomes the immediate field of obedience to God.",
+      "In this way Spyridon stands close to the humane discernment of the desert fathers: discipline is real, but mercy reveals its purpose.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+  {
+    eyebrow: "Prayer",
+    title: "Creation As Obedient To God",
+    body: [
+      "Stories of rain, floodwaters, healing, and deliverance show Spyridon's confidence that the world belongs to God.",
+      "His miracles do not make him a magician. They present him as a saint whose prayer is transparent to God's care for creation and human need.",
+      "That confidence is deeply pastoral: he prays because people are hungry, endangered, sick, or confused, and because God is merciful.",
+    ],
+    references: ["spyridon-oca-life"],
+  },
+];
+
+export const spyridonSourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["spyridon-oca-life", "spyridon-oca-hymns"],
+  },
+  {
+    title: "Context",
+    references: ["spyridon-orthodoxwiki"],
+  },
+];
+
+export const maryOverviewSections: ResearchSection[] = [
+  {
+    eyebrow: "Repentance",
+    title: "A Life Turned Completely",
+    body: [
+      "Saint Mary of Egypt is one of the Church's most intense witnesses to repentance. Her life is remembered through the meeting between the monk Zosimas and a woman hidden for decades in the desert.",
+      "The tradition does not hide the depth of her former disorder, but it also refuses to define her by it. Her story moves toward tears, confession, ascetic struggle, communion, and sanctity.",
+      "For that reason, Mary is remembered not as a symbol of shame, but as a sign that repentance can become an entire life transfigured by mercy.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Lent",
+    title: "Remembered In The Church's Fast",
+    body: [
+      "Mary is commemorated on April 1 and also on the Fifth Sunday of Great Lent. OrthodoxWiki notes that her Life is read during Great Lent with the Great Canon of Saint Andrew.",
+      "Her place in Lent is fitting. She teaches that repentance is not self-improvement by willpower, but a return to God through truth, tears, endurance, and grace.",
+      "The Lenten setting also protects her story from voyeurism. The Church reads her life as a call to humility and hope.",
+    ],
+    references: ["mary-oca-life", "mary-oca-hymns", "mary-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Hidden holiness",
+    title: "Zosimas Learns In The Desert",
+    body: [
+      "The Life begins with Zosimas disturbed by thoughts that he had reached a high spiritual measure. He is led to the Jordan monastery and then into the desert, where he meets Mary.",
+      "This frame is important. Mary is not only the one who repents; she is also the hidden teacher through whom an experienced monk learns humility.",
+      "The story turns expectations inside out. The one who seems most ruined becomes radiant through repentance, and the elder who thinks he has nothing left to learn is taught by hidden holiness.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+];
+
+export const maryTimeline: TimelineEntry[] = [
+  {
+    label: "Alexandria",
+    title: "A Life Disordered By Passion",
+    body: [
+      "Mary says she was born in Egypt and left her parents at twelve for Alexandria. The Life remembers seventeen years of serious sexual disorder, poverty, and bondage to passion.",
+      "The point of this beginning is not sensational detail. It shows the distance between Mary's former life and the holiness later revealed in the desert.",
+      "Her story begins in captivity to desire, but it does not end there. The whole Life is shaped by the mercy of God seeking the repentance of sinners.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    label: "Jerusalem",
+    title: "Stopped At The Door",
+    body: [
+      "Mary traveled with pilgrims to Jerusalem for the Exaltation of the Cross. When she tried to enter the church, an unseen force prevented her while others entered freely.",
+      "Standing outside, she saw an icon of the Theotokos, wept, and prayed for permission to venerate the Cross, promising to renounce her former life and go wherever she was led.",
+      "After this prayer she entered, venerated the Cross, and heard the call to cross the Jordan. The door that had been closed became the threshold of repentance.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    label: "Jordan",
+    title: "Three Loaves And The Desert",
+    body: [
+      "Mary bought three loaves, received the Holy Mysteries at the church of Saint John the Forerunner, crossed the Jordan, and entered the desert.",
+      "The Life says she lived there forty-seven years. Her first years were not peaceful triumph; she endured seventeen years of battle with memories, cravings, hunger, thirst, and the passions she had formerly served.",
+      "This long struggle keeps the story honest. Repentance begins decisively, but healing becomes real through endurance, grace, and obedience to the path given by God.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    label: "Zosimas",
+    title: "The Hidden Ascetic Revealed",
+    body: [
+      "During Great Lent, Zosimas went into the desert and saw Mary. She called him by name, recognized his priesthood, asked for his cloak, and later told him her story.",
+      "Her hiddenness is joined to spiritual perception. She quotes Scripture, prays with astonishing grace, and yet speaks of herself with deep humility.",
+      "Zosimas is not merely collecting information. He is being corrected by wonder: holiness may be hidden where he did not expect to find it.",
+    ],
+    references: ["mary-oca-life"],
+  },
+  {
+    label: "Communion",
+    title: "Holy Thursday At The Jordan",
+    body: [
+      "Mary asked Zosimas to return the next year on Holy Thursday with the Holy Mysteries. He did so, and saw her cross the Jordan miraculously to receive Communion.",
+      "She rebuked him when he tried to bow before her, reminding him that he was a priest carrying the Mysteries. Her humility remains exact even in the midst of wonder.",
+      "After receiving Communion, she asked him to return to the place where they first met.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    label: "Repose",
+    title: "Burial In The Desert",
+    body: [
+      "When Zosimas returned, he found Mary reposed, with a message asking him to bury her and revealing that she had died after receiving the Holy Mysteries the year before.",
+      "The Life says a lion helped dig the grave when Zosimas could not do it alone. He returned to the monastery and told what he had seen, and the brothers remembered Mary with faith and love.",
+      "Her life closes in hiddenness, but not in oblivion. The Church receives her story as a luminous witness that repentance can lead into communion and joy.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+];
+
+export const maryTeachingSections: ResearchSection[] = [
+  {
+    eyebrow: "Repentance",
+    title: "No Past Is Final Before God",
+    body: [
+      "Mary's life teaches that grave sin is real, but not ultimate. The Church does not minimize her past, yet remembers her as venerable because repentance became the truth of her life.",
+      "Her conversion is not mere regret. It includes confession, renunciation, sacramental life, and decades of hidden struggle.",
+      "This makes her one of the strongest Orthodox witnesses that despair is a lie.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Theotokos",
+    title: "Help At The Threshold",
+    body: [
+      "Mary's turning begins before the icon of the Theotokos at the church door. She asks to see the Cross and promises to follow where she is led.",
+      "The scene shows repentance as both personal and intercessory. Mary cries out, but she is helped by the Mother of God and led toward Christ.",
+      "The threshold becomes an image of mercy: the blocked door reveals the wound, and prayer opens the way to healing.",
+    ],
+    references: ["mary-oca-life"],
+  },
+  {
+    eyebrow: "Ascetic healing",
+    title: "The Long Battle After Conversion",
+    body: [
+      "Mary's seventeen years of struggle in the desert are essential to reading her well. The Life does not claim that old passions disappeared instantly.",
+      "Instead, it shows healing as a long war fought by grace. Hunger, memory, loneliness, desire, and thirst become the field where repentance is tested and deepened.",
+      "Her holiness therefore comforts those who need endurance more than easy answers.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+  {
+    eyebrow: "Hiddenness",
+    title: "Holiness Without Witnesses",
+    body: [
+      "For decades, Mary is known only to God. Her sanctity is not built in public, and she does not manage her reputation.",
+      "When Zosimas finds her, the revelation comes for the Church's benefit, not for her self-display.",
+      "Her hidden life teaches that the truest repentance may be invisible for a long time, yet entirely seen by God.",
+    ],
+    references: ["mary-oca-life"],
+  },
+  {
+    eyebrow: "Communion",
+    title: "Repentance Leads To The Mysteries",
+    body: [
+      "Mary's story moves toward Holy Communion. After decades in the desert, she asks Zosimas to bring the Body and Blood of Christ on Holy Thursday.",
+      "This keeps her asceticism from becoming private spiritual achievement. The desert life leads back to the sacramental life of the Church.",
+      "Her final earthly act, as remembered in the Life, is communion with Christ.",
+    ],
+    references: ["mary-oca-life", "mary-oca-hymns"],
+  },
+  {
+    eyebrow: "Humility",
+    title: "The Teacher Who Calls Herself A Sinner",
+    body: [
+      "Mary instructs Zosimas, reveals spiritual knowledge, and prays with astonishing grace, yet she speaks of herself as a sinner in need of mercy.",
+      "That humility is not self-erasure. It is clear sight. She knows what God has done, and she knows that everything is mercy.",
+      "Her teaching is therefore inseparable from her posture: truth without despair, holiness without pride.",
+    ],
+    references: ["mary-oca-life", "mary-orthodoxwiki"],
+  },
+];
+
+export const marySourceGroups = [
+  {
+    title: "Church Sources",
+    references: ["mary-oca-life", "mary-oca-hymns"],
+  },
+  {
+    title: "Context",
+    references: ["mary-orthodoxwiki"],
   },
 ];
