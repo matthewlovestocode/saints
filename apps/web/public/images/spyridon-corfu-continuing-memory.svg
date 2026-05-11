@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536" role="img" aria-labelledby="title desc">
+  <title id="title">Corfu And Continuing Memory</title>
+  <desc id="desc">Relics, church, and continuing prayer</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d3f52"/>
+      <stop offset="0.45" stop-color="#59624f"/>
+      <stop offset="1" stop-color="#a86f3c"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="25%" r="34%">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#d9a441" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe2bf"/>
+      <stop offset="1" stop-color="#cba66a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1c1712" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+  <circle cx="512" cy="382" r="352" fill="url(#halo)"/>
+  <path d="M82 1250 C230 1138 334 1212 512 1115 C690 1212 794 1138 942 1250 L942 1536 L82 1536 Z" fill="#1f2f35" opacity="0.76"/>
+  <g opacity="0.36" stroke="#f6d889" stroke-width="5" fill="none">
+    <path d="M140 164 H884"/><path d="M168 206 H856"/><path d="M192 248 H832"/>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <circle cx="512" cy="390" r="104" fill="#d6a645"/>
+    <circle cx="512" cy="390" r="74" fill="#7c4d32"/>
+    <path d="M374 1018 C392 720 426 538 512 538 C598 538 632 720 650 1018 Z" fill="url(#robe)"/>
+    <path d="M432 548 C466 622 558 622 592 548" stroke="#5b3d2b" stroke-width="18" fill="none"/>
+    <path d="M512 596 V900 M438 728 H586" stroke="#7a3f2b" stroke-width="24" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(178 840)">
+    <path d="M78 214 L332 38 L586 214 V484 H78 Z" fill="#d8c18a"/>
+    <path d="M38 226 L332 16 L626 226" stroke="#f4df9d" stroke-width="28" fill="none"/>
+    <rect x="232" y="300" width="200" height="184" rx="92" fill="#2c3a43"/>
+    <path d="M332 34 V-92 M272 -38 H392" stroke="#f4df9d" stroke-width="24" stroke-linecap="round"/>
+    <path d="M150 288 H514" stroke="#8d5b38" stroke-width="16"/>
+  </g>
+  <path d="M164 1242 C296 1182 422 1228 512 1168 C602 1228 728 1182 860 1242" stroke="#7db1c0" stroke-width="28" fill="none" opacity="0.85"/>
+
+  <g transform="translate(120 1330)">
+    <rect x="0" y="0" width="784" height="104" rx="34" fill="#1c2529" opacity="0.72"/>
+    <text x="392" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f8e6b5">Corfu And Continuing Memory</text>
+    <text x="392" y="78" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#d8c797">Relics, church, and continuing prayer</text>
+  </g>
+</svg>
