@@ -54,6 +54,16 @@ describe("service config", () => {
     expect(config.server.port).toBe(0);
   });
 
+  it("reads high-trust GitHub handoff config", () => {
+    const config = resolveServiceConfig(workflow({
+      tracker: { kind: "linear" },
+      github: { auto_pr: true, auto_merge: true, base_branch: "main", checks: ["npm test"] }
+    }));
+    expect(config.github.autoPr).toBe(true);
+    expect(config.github.autoMerge).toBe(true);
+    expect(config.github.checks).toEqual(["npm test"]);
+  });
+
   it("validates required dispatch fields", () => {
     const config = resolveServiceConfig(workflow({ tracker: { kind: "linear", api_key: "$MISSING", project_slug: "demo" } }), {});
     expect(() => validateDispatchConfig(config)).toThrow(/api_key/i);

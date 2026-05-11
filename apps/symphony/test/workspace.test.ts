@@ -16,7 +16,8 @@ function config(root: string, hooks: Partial<ServiceConfig["hooks"]> = {}): Serv
     hooks: { afterCreate: null, beforeRun: null, afterRun: null, beforeRemove: null, timeoutMs: 1000, ...hooks },
     agent: { maxConcurrentAgents: 1, maxTurns: 1, maxRetryBackoffMs: 1000, maxConcurrentAgentsByState: new Map() },
     codex: { command: "true", approvalPolicy: null, threadSandbox: null, turnSandboxPolicy: null, turnTimeoutMs: 1000, readTimeoutMs: 1000, stallTimeoutMs: 0 },
-    server: { port: null }
+    server: { port: null },
+    github: { autoPr: false, autoMerge: false, baseBranch: "main", remote: "origin", draft: false, checks: ["npm test", "npm run build"] }
   };
 }
 

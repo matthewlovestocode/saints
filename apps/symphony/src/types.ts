@@ -72,6 +72,14 @@ export type ServiceConfig = {
   server: {
     port: number | null;
   };
+  github: {
+    autoPr: boolean;
+    autoMerge: boolean;
+    baseBranch: string;
+    remote: string;
+    draft: boolean;
+    checks: string[];
+  };
 };
 
 export type ConfigBundle = {

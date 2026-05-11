@@ -1,5 +1,6 @@
 import { EventEmitter } from "node:events";
 import { errorMessage, SymphonyError } from "./errors.js";
+import { GitHubPublisher } from "./github.js";
 import { LinearClient } from "./linear.js";
 import { validateDispatchConfig, hasWorkflowChanged, loadConfigBundle } from "./workflow.js";
 import { WorkspaceManager } from "./workspace.js";
@@ -60,6 +61,7 @@ export class Orchestrator extends EventEmitter {
   private stopped = false;
   private tracker: TrackerClient;
   private workspaceManager: WorkspaceManager;
+  private githubPublisher: GitHubPublisher;
   private bundle: ConfigBundle;
 
   constructor(
@@ -72,6 +74,7 @@ export class Orchestrator extends EventEmitter {
     this.bundle = initialBundle;
     this.tracker = new LinearClient(() => this.config);
     this.workspaceManager = new WorkspaceManager(() => this.config, this.logger);
+    this.githubPublisher = new GitHubPublisher(() => this.config, this.logger);
     this.state = {
       pollIntervalMs: initialBundle.config.polling.intervalMs,
       maxConcurrentAgents: initialBundle.config.agent.maxConcurrentAgents,
@@ -305,11 +308,11 @@ export class Orchestrator extends EventEmitter {
       })
       .then(async () => {
         await this.workspaceManager.afterRun(workspacePath);
-        this.onWorkerExit(issue.id, "normal");
+        await this.onWorkerExit(issue.id, "normal", undefined, workspacePath);
       })
       .catch(async (error) => {
         await this.workspaceManager.afterRun(workspacePath);
-        this.onWorkerExit(issue.id, "abnormal", errorMessage(error));
+        await this.onWorkerExit(issue.id, "abnormal", errorMessage(error), workspacePath);
       });
   }
 
@@ -352,19 +355,47 @@ export class Orchestrator extends EventEmitter {
     this.state.codexTotals.total_tokens += totalDelta;
   }
 
-  private onWorkerExit(issueId: string, reason: "normal" | "abnormal", error?: string): void {
+  private async onWorkerExit(issueId: string, reason: "normal" | "abnormal", error?: string, workspacePath?: string): Promise<void> {
     const entry = this.state.running.get(issueId);
     if (!entry) return;
     this.state.running.delete(issueId);
     this.state.codexTotals.seconds_running += (Date.now() - entry.startedAt) / 1000;
     if (reason === "normal") {
       this.state.completed.add(issueId);
-      this.scheduleRetry(issueId, 1, entry.identifier, null, "continuation");
+      if (this.config.github.autoPr && workspacePath) {
+        await this.publishSuccessfulRun(entry.issue, workspacePath);
+        this.state.claimed.delete(issueId);
+      } else {
+        this.scheduleRetry(issueId, 1, entry.identifier, null, "continuation");
+      }
     } else {
       this.scheduleRetry(issueId, this.nextAttempt(entry.retryAttempt), entry.identifier, error ?? reason);
+      void this.noteWorkerExit(entry.issue, reason, error);
     }
-    void this.noteWorkerExit(entry.issue, reason, error);
     this.logger.info("worker exited", { issue_id: issueId, issue_identifier: entry.identifier, reason, error });
+  }
+
+  private async publishSuccessfulRun(issue: Issue, workspacePath: string): Promise<void> {
+    try {
+      const result = await this.githubPublisher.publishIssueWorkspace(issue, workspacePath);
+      if (result.status === "no_changes") {
+        await this.noteIssueComment(issue.id, "Symphony completed the worker session, but there were no workspace changes to publish.");
+        await this.tracker.updateIssueState?.(issue.id, "In Review");
+        return;
+      }
+
+      await this.noteIssueComment(
+        issue.id,
+        result.status === "merged"
+          ? `Symphony opened and merged PR ${result.prUrl} for this issue.`
+          : `Symphony opened PR ${result.prUrl} for this issue.`
+      );
+      await this.tracker.updateIssueState?.(issue.id, result.status === "merged" ? "Done" : "In Review");
+    } catch (error) {
+      await this.noteIssueComment(issue.id, `Symphony completed the Codex run, but GitHub handoff failed: ${errorMessage(error)}`);
+      await this.tracker.updateIssueState?.(issue.id, "In Review");
+      this.logger.error("github handoff failed", { issue_id: issue.id, issue_identifier: issue.identifier, error: errorMessage(error) });
+    }
   }
 
   private terminateRunningIssue(issueId: string, cleanupWorkspace: boolean, reason: string): void {
