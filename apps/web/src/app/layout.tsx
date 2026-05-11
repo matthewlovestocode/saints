@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SiteNav } from "@/components/site/SiteNav";
+import { SITE_TITLE } from "./metadata";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,8 +15,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Orthodox Saints",
-  description: "Orthodox Saints",
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_TITLE}`,
+  },
+  description:
+    "Explore Orthodox saints through concise lives, teachings, timelines, and trusted sources.",
 };
 
 export default function RootLayout({

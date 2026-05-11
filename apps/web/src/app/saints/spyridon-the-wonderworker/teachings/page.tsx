@@ -2,8 +2,11 @@ import {
   spyridonTeachingSections,
   spyridonTheWonderworker,
 } from "../../../data/saints";
+import { saintSectionMetadata } from "../../../metadata";
 import { ResearchSectionList } from "@/components/saints/ResearchSectionList";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
+
+export const metadata = saintSectionMetadata(spyridonTheWonderworker, "Teachings");
 
 export default function SpyridonTheWonderworkerTeachingsPage() {
   return (

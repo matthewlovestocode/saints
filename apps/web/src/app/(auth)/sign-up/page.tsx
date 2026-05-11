@@ -6,7 +6,7 @@ import { getAuthMessage, type AuthSearchParams } from "../authParams";
 import styles from "../auth.module.css";
 
 export const metadata: Metadata = {
-  title: "Sign Up | Orthodox Saints",
+  title: "Sign Up",
 };
 
 type SignUpPageProps = {

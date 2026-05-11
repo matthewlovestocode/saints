@@ -27,6 +27,7 @@ import {
   spyridonSourceGroups,
   spyridonTheWonderworker,
 } from "../../../data/saints";
+import { saintSectionMetadata } from "../../../metadata";
 import { ReferenceGroup } from "@/components/saints/ReferenceGroup";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
 import { Prose } from "@/components/ui/Prose";
@@ -57,6 +58,17 @@ export function generateStaticParams() {
   return saints.map((saint) => ({
     slug: saint.slug,
   }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const saint = saintContent[slug];
+
+  if (!saint) {
+    return {};
+  }
+
+  return saintSectionMetadata(saint, "Sources");
 }
 
 export default async function DynamicSaintSourcesPage({ params }: PageProps) {

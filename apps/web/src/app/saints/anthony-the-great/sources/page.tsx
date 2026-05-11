@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { anthonySourceGroups, anthonyTheGreat } from "../../../data/saints";
+import { saintSectionMetadata } from "../../../metadata";
 import { ReferenceGroup } from "@/components/saints/ReferenceGroup";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
 import { Prose } from "@/components/ui/Prose";
 import { Section } from "@/components/ui/Section";
+
+export const metadata = saintSectionMetadata(anthonyTheGreat, "Sources");
 
 export default function AnthonyTheGreatSourcesPage() {
   return (

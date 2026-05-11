@@ -1,7 +1,10 @@
+import { homeMetadata } from "./metadata";
 import { saints } from "./data/saints";
 import { Container } from "@/components/ui/Container";
 import { SaintIndexCard } from "@/components/saints/SaintIndexCard";
 import styles from "./page.module.css";
+
+export const metadata = homeMetadata();
 
 export default function Home() {
   return (
