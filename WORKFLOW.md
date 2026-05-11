@@ -19,10 +19,10 @@ workspace:
 
 hooks:
   after_create: |
-    git clone https://github.com/matthewlovestocode/saints.git .
+    git clone --depth 1 https://github.com/matthewlovestocode/saints.git .
   before_run: |
     git fetch origin
-  timeout_ms: 60000
+  timeout_ms: 180000
 
 agent:
   max_concurrent_agents: 2
