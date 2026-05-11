@@ -14,6 +14,9 @@ tracker:
     - Duplicate
     - Done
 
+polling:
+  interval_ms: 15000
+
 workspace:
   root: .symphony-workspaces
 
