@@ -1,8 +1,11 @@
 import { mosesSourceGroups, mosesTheBlack } from "../../../data/saints";
+import { saintSectionMetadata } from "../../../metadata";
 import { ReferenceGroup } from "@/components/saints/ReferenceGroup";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
 import { Prose } from "@/components/ui/Prose";
 import { Section } from "@/components/ui/Section";
+
+export const metadata = saintSectionMetadata(mosesTheBlack, "Sources");
 
 export default function MosesTheBlackSourcesPage() {
   return (

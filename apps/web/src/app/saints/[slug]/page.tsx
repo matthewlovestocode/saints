@@ -27,6 +27,7 @@ import {
   spyridonOverviewSections,
   spyridonTheWonderworker,
 } from "../../data/saints";
+import { saintMetadata } from "../../metadata";
 import { ResearchSectionList } from "@/components/saints/ResearchSectionList";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
 
@@ -55,6 +56,17 @@ export function generateStaticParams() {
   return saints.map((saint) => ({
     slug: saint.slug,
   }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const saint = saintContent[slug];
+
+  if (!saint) {
+    return {};
+  }
+
+  return saintMetadata(saint);
 }
 
 export default async function DynamicSaintPage({ params }: PageProps) {

@@ -2,8 +2,11 @@ import {
   anthonyOverviewSections,
   anthonyTheGreat,
 } from "../../data/saints";
+import { saintMetadata } from "../../metadata";
 import { ResearchSectionList } from "@/components/saints/ResearchSectionList";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
+
+export const metadata = saintMetadata(anthonyTheGreat);
 
 export default function AnthonyTheGreatPage() {
   return (

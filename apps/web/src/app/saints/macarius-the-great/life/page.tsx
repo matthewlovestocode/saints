@@ -2,10 +2,13 @@ import {
   macariusTheGreat,
   macariusTimeline,
 } from "../../../data/saints";
+import { saintSectionMetadata } from "../../../metadata";
 import { SaintPageLayout } from "@/components/saints/SaintPageLayout";
 import { Timeline } from "@/components/saints/Timeline";
 import { Prose } from "@/components/ui/Prose";
 import { Section } from "@/components/ui/Section";
+
+export const metadata = saintSectionMetadata(macariusTheGreat, "Life");
 
 export default function MacariusTheGreatLifePage() {
   return (
