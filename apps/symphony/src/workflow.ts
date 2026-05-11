@@ -78,6 +78,7 @@ export function resolveServiceConfig(workflow: WorkflowDefinition, env = process
   const agent = objectAt(workflow.config, "agent");
   const codex = objectAt(workflow.config, "codex");
   const server = objectAt(workflow.config, "server");
+  const github = objectAt(workflow.config, "github");
 
   const kind = stringAt(tracker, "kind");
   const trackerKind = kind === "linear" ? "linear" : kind;
@@ -128,6 +129,14 @@ export function resolveServiceConfig(workflow: WorkflowDefinition, env = process
     },
     server: {
       port: nonNegativeIntegerOrNullAt(server, "port")
+    },
+    github: {
+      autoPr: booleanAt(github, "auto_pr", false),
+      autoMerge: booleanAt(github, "auto_merge", false),
+      baseBranch: stringAt(github, "base_branch") ?? "main",
+      remote: stringAt(github, "remote") ?? "origin",
+      draft: booleanAt(github, "draft", false),
+      checks: stringArrayAt(github, "checks") ?? ["npm test", "npm run build"]
     }
   };
 }
@@ -203,6 +212,11 @@ function stringArrayAt(object: JsonObject | null, key: string): string[] | null 
   if (!Array.isArray(value)) return null;
   const strings = value.filter((item): item is string => typeof item === "string");
   return strings.length === value.length ? strings : null;
+}
+
+function booleanAt(object: JsonObject | null, key: string, fallback: boolean): boolean {
+  const value = valueAt(object, key);
+  return typeof value === "boolean" ? value : fallback;
 }
 
 function positiveIntegerMapAt(object: JsonObject | null, key: string): Map<string, number> {

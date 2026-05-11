@@ -1,5 +1,6 @@
 export * from "./codex.js";
 export * from "./errors.js";
+export * from "./github.js";
 export * from "./linear.js";
 export * from "./logger.js";
 export * from "./orchestrator.js";

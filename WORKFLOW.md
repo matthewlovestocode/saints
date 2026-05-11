@@ -35,6 +35,16 @@ codex:
   turn_timeout_ms: 3600000
   read_timeout_ms: 5000
   stall_timeout_ms: 300000
+
+github:
+  auto_pr: true
+  auto_merge: true
+  base_branch: main
+  remote: origin
+  draft: false
+  checks:
+    - npm test
+    - npm run build
 ---
 
 You are working on a Linear issue for the Orthodox Saints repository.
