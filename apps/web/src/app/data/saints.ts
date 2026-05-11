@@ -2124,9 +2124,18 @@ export const spyridonTimeline: TimelineEntry[] = [
     title: "A Shepherd Formed In Charity",
     body: [
       "Spyridon was born in Cyprus toward the end of the third century. The tradition remembers him first as a shepherd, married, with children, and generous with what he had.",
-      "The OCA life says he used his substance for neighbors and the homeless, and that God rewarded him with wonderworking grace. The starting point is not status, but mercy.",
+      "The OCA life says he used his substance for neighbors and the homeless, and that God rewarded him with wonderworking grace. The starting point is not status, but mercy practiced in the household and among the poor.",
       "This early memory matters because Spyridon's later episcopal dignity never erases the shepherd. The bishop remains a man close to ordinary work, hunger, illness, debt, and need.",
+      "Read this way, his life begins with an image of holiness that is deliberately plain: a man tending sheep, giving freely, and learning compassion before he is known as a bishop or wonderworker.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon as a Cypriot shepherd beside sheep and a small household of charity",
+      caption:
+        "Spyridon is first remembered as a Cypriot shepherd whose home and possessions were open to neighbors, strangers, and the poor.",
+      height: 1536,
+      src: "/images/spyridon-shepherd-formed-charity.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
   },
   {
@@ -2134,9 +2143,18 @@ export const spyridonTimeline: TimelineEntry[] = [
     title: "Pastoral Service Without Display",
     body: [
       "After the death of his wife, Spyridon was made Bishop of Tremithus during the reign of Constantine the Great. The sources stress that he did not change his manner of life.",
-      "His episcopacy is remembered through deeds of charity rather than distance from the people. He remains simple, available, and practical.",
-      "This is one of the clearest themes in his life: office does not replace humility. In Spyridon, authority is shown as shepherding.",
+      "His episcopacy is remembered through deeds of charity rather than distance from the people. He remains simple, available, and practical, continuing to care for the poor as a shepherd cares for a flock.",
+      "This is one of the clearest themes in his life: office does not replace humility. In Spyridon, authority is shown as shepherding, and the bishop's dignity is made credible by service.",
+      "The life therefore resists a separation between holiness and ordinary mercy. Spyridon's pastoral authority is not theatrical; it is shown in steady nearness to those entrusted to him.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon as Bishop of Tremithus standing humbly among the people he serves",
+      caption:
+        "As bishop, Spyridon is remembered for keeping the simple, merciful way of life he had learned as a shepherd.",
+      height: 1536,
+      src: "/images/spyridon-pastoral-service-without-display.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life"],
   },
   {
@@ -2146,7 +2164,16 @@ export const spyridonTimeline: TimelineEntry[] = [
       "Spyridon is remembered as present at the First Ecumenical Council in 325, where he answered an Arian-leaning philosopher with direct confession rather than ornate argument.",
       "The famous sign of the brick gathers the story's meaning. One brick, understood as made of fire, water, and earth, becomes an image for confessing three Persons and one God in the Holy Trinity.",
       "The point is not cleverness. The tradition presents the miracle as a sign that true theology belongs to humble faith as much as to learned speech.",
+      "In the wider shape of his life, this council memory is not a departure from pastoral simplicity. The same plain faith that gives bread to the poor also confesses the Trinity when the Church is troubled by false teaching.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon holding a brick at the Council of Nicaea with fire water and earth shown from it",
+      caption:
+        "At Nicaea, the remembered sign of the brick points to the confession of the Holy Trinity: three Persons and one God.",
+      height: 1536,
+      src: "/images/spyridon-brick-at-the-council.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
   },
   {
@@ -2154,9 +2181,18 @@ export const spyridonTimeline: TimelineEntry[] = [
     title: "Need, Debt, And Hospitality",
     body: [
       "Several stories show Spyridon's charity in ordinary hardship. He is remembered as distributing harvests to the poor and to debtors without records or account books.",
+      "That trust is part of the lesson. The grain and goods entrusted to him are treated as gifts for need, not as instruments for control, reputation, or careful self-protection.",
       "Another story tells of his hospitality to an exhausted traveler at the beginning of the Fast. Spyridon cares first for the man before him, interpreting ascetic practice through mercy.",
       "Even the story of robbers caught by invisible power ends with counsel, release, and a gift. The saint does not turn their shame into spectacle; he sends them away with a call to honest work.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon with grain stores a debtor and an exhausted traveler receiving hospitality",
+      caption:
+        "The life remembers Spyridon's mercy in practical scenes of grain, debt, hospitality, correction, and restored dignity.",
+      height: 1536,
+      src: "/images/spyridon-need-debt-hospitality.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life"],
   },
   {
@@ -2165,8 +2201,17 @@ export const spyridonTimeline: TimelineEntry[] = [
     body: [
       "The OCA life remembers Spyridon healing the sick, casting out demons, restoring a dead child to life, saving a falsely condemned friend by commanding floodwaters to halt, and even speaking to his departed daughter about entrusted jewelry.",
       "These stories are severe and tender at once. They show creation, death, sickness, and human injustice answering to God through the prayers of a humble bishop.",
-      "The miracles are not separate from his pastoral love. They are the visible edge of a life poured out for others.",
+      "The miracles are not separate from his pastoral love. They are the visible edge of a life poured out for others, especially where ordinary human help has reached its limit.",
+      "The tradition therefore calls him Wonderworker without making wonderworking a spectacle. The marvels are received as intercession, mercy, and the Lord's care for the living and the dead.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon praying over the sick and departed as light gathers around his intercession",
+      caption:
+        "Spyridon's miracles are remembered as prayerful mercy for the sick, the falsely accused, the grieving, and even the departed.",
+      height: 1536,
+      src: "/images/spyridon-prayer-living-dead.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
   },
   {
@@ -2175,8 +2220,17 @@ export const spyridonTimeline: TimelineEntry[] = [
     body: [
       "Spyridon reposed in holiness, traditionally in 348. The OCA life says his relics now repose on Corfu, while OrthodoxWiki preserves the wider account of their translation and continuing veneration.",
       "Later devotion remembers him as a saint who continues to help the faithful. The title Wonderworker is therefore not only a label for past events, but part of the Church's ongoing memory of his intercession.",
+      "Corfu's devotion also keeps together place and prayer: the shepherd-bishop of Cyprus becomes a beloved protector whose relics are approached with gratitude, petition, and remembrance.",
       "His life closes as it began: with the shepherd-bishop still known for practical mercy, faithful confession, and prayer for those in need.",
     ],
+    image: {
+      alt: "Icon-inspired image of Saint Spyridon's continuing memory in Corfu with a church reliquary and sea",
+      caption:
+        "On Corfu, devotion to Saint Spyridon keeps alive the memory of the shepherd-bishop's intercession and practical mercy.",
+      height: 1536,
+      src: "/images/spyridon-corfu-continuing-memory.svg",
+      width: 1024,
+    },
     references: ["spyridon-oca-life", "spyridon-orthodoxwiki"],
   },
 ];
